@@ -1,0 +1,113 @@
+.mapperContainer {
+  flex-direction: column;
+  width: 100%;
+  max-width: 1079px;
+  margin: 91px auto 0;
+  display: flex;
+}
+
+.title {
+  color: #322e29;
+  font-family: "Tiro Devanagari Hindi", serif;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.searchBar {
+  color: #908e8d;
+  background-color: #faf9f8;
+  border-radius: 50px;
+  align-items: center;
+  gap: 20px;
+  width: 593px;
+  max-width: 100%;
+  margin-top: 95px;
+  padding: 3px 80px 3px 23px;
+  font-family: Poppins, sans-serif;
+  font-size: 26px;
+  display: flex;
+}
+
+.searchIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  width: 44px;
+}
+
+.searchInput {
+  flex-grow: 1;
+  padding: 12px;
+  border: none;
+  background: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+.searchInput::placeholder {
+  color: inherit;
+}
+
+.manualButton {
+  color: #faf9f8;
+  cursor: pointer;
+  background-color: #433c33;
+  border: none;
+  border-radius: 50px;
+  width: fit-content;
+  margin: 23px auto 0;
+  padding: 15px 68px;
+  font-family: Poppins, sans-serif;
+  font-size: 26px;
+}
+
+.mapFrame {
+  background-color: #fff;
+  border-radius: 35px;
+  margin-top: 75px;
+  overflow: hidden;
+}
+
+.mapImage {
+  aspect-ratio: 2.05;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+@media (width <= 991px) {
+  .mapperContainer {
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+
+  .searchBar {
+    width: 100%;
+    padding: 3px 20px;
+  }
+
+  .manualButton {
+    padding: 15px 40px;
+  }
+}
+
+@media (width <= 640px) {
+  .mapperContainer {
+    margin-top: 30px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .searchBar {
+    flex-direction: row;
+    margin-top: 40px;
+  }
+
+  .manualButton {
+    text-align: center;
+    width: 100%;
+  }
+}

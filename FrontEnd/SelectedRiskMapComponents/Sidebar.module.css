@@ -1,0 +1,86 @@
+.sidebarColumn {
+  flex-direction: column;
+  width: 25%;
+  display: flex;
+}
+
+.sidebar {
+  color: #fff;
+  background-color: #907e6c;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+  height: 100vh;
+  padding-top: 17px;
+  font-family: Poppins, sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  display: flex;
+}
+
+.logoContainer {
+  white-space: nowrap;
+  flex-direction: column;
+  width: 261px;
+  max-width: 100%;
+  margin-left: 21px;
+  display: flex;
+}
+
+.logo {
+  aspect-ratio: 1.09;
+  object-fit: contain;
+  width: 130px;
+  max-width: 100%;
+}
+
+.regulations {
+  margin-top: 49px;
+  padding-left: 70px;
+}
+
+.riskMaps {
+  background-color: #584d41;
+  margin-top: 39px;
+  padding: 40px 70px;
+}
+
+.navLinks {
+  list-style: none;
+  padding: 0;
+  flex-direction: column;
+  align-items: start;
+  gap: 79px;
+  margin-top: 40px;
+  padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+}
+
+.navLinks a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (width <= 640px) {
+  .sidebarColumn {
+    width: 100%;
+  }
+
+  .sidebar {
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  .logoContainer {
+    padding-left: 20px;
+  }
+
+  .regulations {
+    padding-left: 20px;
+  }
+
+  .navLinks {
+    padding-left: 20px;
+  }
+}
