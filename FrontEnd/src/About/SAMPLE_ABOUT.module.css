@@ -1,0 +1,937 @@
+@ -0,0 +1,937 @@
+.sampleAbout {
+    background-color: #e1dfdd;
+  }
+
+  /* Layout */
+  .container {
+    display: flex;
+    gap: 20px;
+  }
+
+  @media (width <= 991px) {
+    .container {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+  }
+
+  /* Sidebar Column */
+  .sidebarColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 25%;
+    line-height: normal;
+  }
+
+  @media (width <= 991px) {
+    .sidebarColumn {
+      width: 100%;
+    }
+  }
+
+  .sidebar {
+    color: #fff;
+    background-color: #907e6c;
+    flex-grow: 1;
+    width: 100%;
+    padding-top: 17px;
+    padding-bottom: 367px;
+    font-family:
+      Poppins,
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    overflow: hidden;
+  }
+
+  @media (width <= 991px) {
+    .sidebar {
+      max-width: 100%;
+      padding-bottom: 100px;
+    }
+  }
+
+  .sidebarContent {
+    display: flex;
+    flex-direction: column;
+    padding-left: 21px;
+    padding-right: 68px;
+  }
+
+  @media (width <= 991px) {
+    .sidebarContent {
+      max-width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  .logoImage {
+    aspect-ratio: 1.09;
+    object-fit: contain;
+    object-position: center;
+    width: 130px;
+    max-width: 100%;
+  }
+
+  .sidebarNav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navLink {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .regulationsLink {
+    align-self: center;
+    margin-top: 49px;
+  }
+
+  @media (width <= 991px) {
+    .regulationsLink {
+      margin-top: 40px;
+    }
+  }
+
+  .riskMapsLink {
+    align-self: flex-start;
+    margin-top: 79px;
+    margin-left: 77px;
+  }
+
+  @media (width <= 991px) {
+    .riskMapsLink {
+      margin-top: 40px;
+      margin-left: 10px;
+    }
+  }
+
+  .planAnnotationsLink {
+    align-self: flex-end;
+    margin-top: 79px;
+  }
+
+  @media (width <= 991px) {
+    .planAnnotationsLink {
+      margin-top: 40px;
+    }
+  }
+
+  .aiChatbotLink {
+    align-self: center;
+    margin-top: 79px;
+  }
+
+  @media (width <= 991px) {
+    .aiChatbotLink {
+      margin-top: 40px;
+    }
+  }
+
+  .aboutLink {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: #584d41;
+    margin-top: 39px;
+    padding: 40px 70px;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  @media (width <= 991px) {
+    .aboutLink {
+      max-width: 100%;
+      white-space: initial;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  /* Main Column */
+  .mainColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 75%;
+    margin-left: 20px;
+    line-height: normal;
+  }
+
+  @media (width <= 991px) {
+    .mainColumn {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+
+  .mainContent {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    font-family:
+      Poppins,
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-weight: 400;
+  }
+
+  @media (width <= 991px) {
+    .mainContent {
+      max-width: 100%;
+    }
+  }
+
+  /* Header */
+  .header {
+    color: #807567;
+    white-space: nowrap;
+    background-color: #faf9f8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+    width: 100%;
+    padding: 35px 37px 35px 80px;
+    font-size: 26px;
+    overflow: hidden;
+  }
+
+  @media (width <= 991px) {
+    .header {
+      max-width: 100%;
+      white-space: initial;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  .searchBar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 36px;
+    background-color: #e1dfdd;
+    border-radius: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 3px 80px 3px 23px;
+    overflow: hidden;
+  }
+
+  @media (width <= 991px) {
+    .searchBar {
+      max-width: 100%;
+      white-space: initial;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  .searchIcon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    flex-shrink: 0;
+    width: 44px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .searchInput {
+    border: none;
+    background: transparent;
+    border-radius: 8px;
+    align-self: stretch;
+    padding: 12px;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    outline: none;
+  }
+
+  @media (width <= 991px) {
+    .searchInput {
+      white-space: initial;
+    }
+  }
+
+  .profileIcon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    flex-shrink: 0;
+    width: 75px;
+  }
+
+  /* Hero Section */
+  .heroSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    min-height: 691px;
+    padding: 181px 80px 295px;
+    font-family:
+      Montaga,
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 40px;
+    position: relative;
+  }
+
+  @media (width <= 991px) {
+    .heroSection {
+      max-width: 100%;
+      padding: 100px 20px;
+    }
+  }
+
+  .heroBackground {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+  }
+
+  .heroContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: -59px;
+    position: relative;
+    z-index: 1;
+  }
+
+  @media (width <= 991px) {
+    .heroContent {
+      margin-bottom: 10px;
+    }
+  }
+
+  .heroTitle {
+    margin: 0;
+    font-size: 40px;
+    font-weight: normal;
+  }
+
+  .heroSubtitle {
+    margin: 0;
+    font-size: 40px;
+    font-weight: normal;
+  }
+
+  .heroProperty {
+    margin-top: 0;
+  }
+
+  .heroDreams {
+    margin-top: 13px;
+  }
+
+  .heroConfidence {
+    margin-top: 13px;
+  }
+
+  .heroDescription {
+    margin-top: 25px;
+    font-family:
+      Poppins,
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 14px;
+  }
+
+  .heroSubDescription {
+    align-self: stretch;
+    margin-top: 6px;
+    font-family:
+      Poppins,
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 14px;
+  }
+
+  /* Options Section */
+  .lookingForTitle {
+    color: #322e29;
+    align-self: center;
+    margin-top: 74px;
+    font-family:
+      Rosarivo,
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 48px;
+    text-align: center;
+  }
+
+  @media (width <= 991px) {
+    .lookingForTitle {
+      max-width: 100%;
+      margin-top: 40px;
+      font-size: 40px;
+    }
+  }
+
+  .optionsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    align-items: stretch;
+    gap: 40px 51px;
+    width: 967px;
+    max-width: 100%;
+    margin-top: 87px;
+    font-size: 36px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  @media (width <= 991px) {
+    .optionsContainer {
+      white-space: initial;
+      margin-top: 40px;
+      justify-content: center;
+    }
+  }
+
+  .optionCard {
+    background-color: #b5b5b5;
+    border-radius: 43px;
+    flex: 1 0 0;
+    width: fit-content;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  @media (width <= 991px) {
+    .optionCard {
+      max-width: 100%;
+      white-space: initial;
+    }
+  }
+
+  .optionContent {
+    display: flex;
+    flex-direction: column;
+    width: 457px;
+    min-height: 58px;
+    padding: 30px 42px 15px;
+    position: relative;
+  }
+
+  @media (width <= 991px) {
+    .optionContent {
+      max-width: 100%;
+      white-space: initial;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  .optionBackground {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+  }
+
+  .optionText {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+  }
+  .sampleAbout {
+    background-color: #e1dfdd;
+  }
+
+  /* Layout */
+  .container {
+    display: flex;
+    gap: 20px;
+  }
+
+  @media (width <= 991px) {
+    .container {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+  }
+
+  /* Sidebar Column */
+  .sidebarColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 25%;
+    line-height: normal;
+  }
+
+  @media (width <= 991px) {
+    .sidebarColumn {
+      width: 100%;
+    }
+  }
+
+  .sidebar {
+    color: #fff;
+    background-color: #907e6c;
+    flex-grow: 1;
+    width: 100%;
+    padding-top: 17px;
+    padding-bottom: 367px;
+    font-family:
+      Poppins,
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    overflow: hidden;
+  }
+
+  @media (width <= 991px) {
+    .sidebar {
+      max-width: 100%;
+      padding-bottom: 100px;
+    }
+  }
+
+  .sidebarContent {
+    display: flex;
+    flex-direction: column;
+    padding-left: 21px;
+    padding-right: 68px;
+  }
+
+  @media (width <= 991px) {
+    .sidebarContent {
+      max-width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  .logoImage {
+    aspect-ratio: 1.09;
+    object-fit: contain;
+    object-position: center;
+    width: 130px;
+    max-width: 100%;
+  }
+
+  .sidebarNav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navLink {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .regulationsLink {
+    align-self: center;
+    margin-top: 49px;
+  }
+
+  @media (width <= 991px) {
+    .regulationsLink {
+      margin-top: 40px;
+    }
+  }
+
+  .riskMapsLink {
+    align-self: flex-start;
+    margin-top: 79px;
+    margin-left: 77px;
+  }
+
+  @media (width <= 991px) {
+    .riskMapsLink {
+      margin-top: 40px;
+      margin-left: 10px;
+    }
+  }
+
+  .planAnnotationsLink {
+    align-self: flex-end;
+    margin-top: 79px;
+  }
+
+  @media (width <= 991px) {
+    .planAnnotationsLink {
+      margin-top: 40px;
+    }
+  }
+
+  .aiChatbotLink {
+    align-self: center;
+    margin-top: 79px;
+  }
+
+  @media (width <= 991px) {
+    .aiChatbotLink {
+      margin-top: 40px;
+    }
+  }
+
+  .aboutLink {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: #584d41;
+    margin-top: 39px;
+    padding: 40px 70px;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  @media (width <= 991px) {
+    .aboutLink {
+      max-width: 100%;
+      white-space: initial;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  /* Main Column */
+  .mainColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 75%;
+    margin-left: 20px;
+    line-height: normal;
+  }
+
+  @media (width <= 991px) {
+    .mainColumn {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+
+  .mainContent {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    font-family:
+      Poppins,
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-weight: 400;
+  }
+
+  @media (width <= 991px) {
+    .mainContent {
+      max-width: 100%;
+    }
+  }
+
+  /* Header */
+  .header {
+    color: #807567;
+    white-space: nowrap;
+    background-color: #faf9f8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+    width: 100%;
+    padding: 35px 37px 35px 80px;
+    font-size: 26px;
+    overflow: hidden;
+  }
+
+  @media (width <= 991px) {
+    .header {
+      max-width: 100%;
+      white-space: initial;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  .searchBar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 36px;
+    background-color: #e1dfdd;
+    border-radius: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 3px 80px 3px 23px;
+    overflow: hidden;
+  }
+
+  @media (width <= 991px) {
+    .searchBar {
+      max-width: 100%;
+      white-space: initial;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  .searchIcon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    flex-shrink: 0;
+    width: 44px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .searchInput {
+    border: none;
+    background: transparent;
+    border-radius: 8px;
+    align-self: stretch;
+    padding: 12px;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    outline: none;
+  }
+
+  @media (width <= 991px) {
+    .searchInput {
+      white-space: initial;
+    }
+  }
+
+  .profileIcon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    flex-shrink: 0;
+    width: 75px;
+  }
+
+  /* Hero Section */
+  .heroSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    min-height: 691px;
+    padding: 181px 80px 295px;
+    font-family:
+      Montaga,
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 40px;
+    position: relative;
+  }
+
+  @media (width <= 991px) {
+    .heroSection {
+      max-width: 100%;
+      padding: 100px 20px;
+    }
+  }
+
+  .heroBackground {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+  }
+
+  .heroContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: -59px;
+    position: relative;
+    z-index: 1;
+  }
+
+  @media (width <= 991px) {
+    .heroContent {
+      margin-bottom: 10px;
+    }
+  }
+
+  .heroTitle {
+    margin: 0;
+    font-size: 40px;
+    font-weight: normal;
+  }
+
+  .heroSubtitle {
+    margin: 0;
+    font-size: 40px;
+    font-weight: normal;
+  }
+
+  .heroProperty {
+    margin-top: 0;
+  }
+
+  .heroDreams {
+    margin-top: 13px;
+  }
+
+  .heroConfidence {
+    margin-top: 13px;
+  }
+
+  .heroDescription {
+    margin-top: 25px;
+    font-family:
+      Poppins,
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 14px;
+  }
+
+  .heroSubDescription {
+    align-self: stretch;
+    margin-top: 6px;
+    font-family:
+      Poppins,
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 14px;
+  }
+
+  /* Options Section */
+  .lookingForTitle {
+    color: #322e29;
+    align-self: center;
+    margin-top: 74px;
+    font-family:
+      Rosarivo,
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 48px;
+    text-align: center;
+  }
+
+  @media (width <= 991px) {
+    .lookingForTitle {
+      max-width: 100%;
+      margin-top: 40px;
+      font-size: 40px;
+    }
+  }
+
+  .optionsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    align-items: stretch;
+    gap: 40px 51px;
+    width: 967px;
+    max-width: 100%;
+    margin-top: 87px;
+    font-size: 36px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  @media (width <= 991px) {
+    .optionsContainer {
+      white-space: initial;
+      margin-top: 40px;
+      justify-content: center;
+    }
+  }
+
+  .optionCard {
+    background-color: #b5b5b5;
+    border-radius: 43px;
+    flex: 1 0 0;
+    width: fit-content;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  @media (width <= 991px) {
+    .optionCard {
+      max-width: 100%;
+      white-space: initial;
+    }
+  }
+
+  .optionContent {
+    display: flex;
+    flex-direction: column;
+    width: 457px;
+    min-height: 58px;
+    padding: 30px 42px 15px;
+    position: relative;
+  }
+
+  @media (width <= 991px) {
+    .optionContent {
+      max-width: 100%;
+      white-space: initial;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  .optionBackground {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+  }
+
+  .optionText {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+  }
