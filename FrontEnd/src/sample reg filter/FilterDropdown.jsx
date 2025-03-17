@@ -1,6 +1,6 @@
-"use client";
 import React, { useState, useRef, useEffect } from "react";
-import styles from "./RegulationsFilter.module.css";
+import { useNavigate } from "react-router-dom";
+import styles from "./RegulationFilter.module.css";
 
 function FilterDropdown({
   placeholderText,

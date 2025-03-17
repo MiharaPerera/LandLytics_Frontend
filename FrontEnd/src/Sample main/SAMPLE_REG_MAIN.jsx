@@ -1,7 +1,6 @@
-"use client";
 import React from "react";
 import styles from "./SAMPLE_REG_MAIN.module.css";
-import Sidebar from "./Sidebar";
+import Sidebar from "../CommonComponents/Sidebar";
 import SearchSection from "./SearchSection";
 import ZonalGrid from "./ZonalGrid";
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./Sidebar.module.css";
 
 function Sidebar() {
@@ -11,19 +12,15 @@ function Sidebar() {
             alt="Logo"
             className={styles.logo}
           />
-          <h2 className={styles.regulations}>REGULATIONS</h2>
+{/*           <h2 className={styles.regulations}>REGULATIONS</h2> */}
         </div>
-        <div className={styles.riskMaps}>RISK MAPS</div>
+{/*         <div className={styles.riskMaps}>RISK MAPS</div> */}
         <ul className={styles.navLinks}>
-          <li>
-            <a href="#plan-annotations">PLAN ANNOTATIONS</a>
-          </li>
-          <li>
-            <a href="#ai-chatbot">AI CHATBOT</a>
-          </li>
-          <li>
-            <a href="#about">ABOUT</a>
-          </li>
+          <li><Link to="/regulations">Regulations</Link></li>
+          <li><Link to="/risk-maps">Risk Maps</Link></li>
+          <li><Link to="/plan-annotations">Plan Annotations</Link></li>
+          <li><Link to="/ai-chatbot">AI Chatbot</Link></li>
+          <li><Link to="/about">About</Link></li>
         </ul>
       </nav>
     </aside>
