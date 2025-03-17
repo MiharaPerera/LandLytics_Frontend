@@ -11,7 +11,7 @@ const SignupForm = () => {
 
   return (
     <section className={styles.rightSection}>
-      <h2 className={styles.createAccount}>Create a new account.</h2>
+      <h2 className={styles.createAccount}>Create a new account</h2>
       <form onSubmit={handleSubmit}>
         <InputField
           label="Username"
