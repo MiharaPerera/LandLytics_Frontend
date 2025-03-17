@@ -1,10 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "./SAMPLE_REG_MAIN.module.css";
 import Sidebar from "../CommonComponents/Sidebar";
 import SearchSection from "./SearchSection";
 import ZonalGrid from "./ZonalGrid";
+import FilterDropdown from "../sample reg filter/FilterDropdown";
 
 function SAMPLE_REG_MAIN() {
+    const navigate = useNavigate();
+
   return (
     <main className={styles.sampleRegMain}>
       <div className={styles.div}>
@@ -23,6 +27,14 @@ function SAMPLE_REG_MAIN() {
             </header>
             <SearchSection />
             <ZonalGrid />
+
+            {/* Button to navigate to the regulation filter page */}
+            <button
+              className={styles.tryFilterButton} // Add styling in CSS
+              onClick={() => navigate("/regulation-filter")}
+            >
+              Try Regulation Filter
+            </button>
           </div>
         </div>
       </div>
