@@ -1,24 +1,15 @@
-"use client";
 import React from "react";
-import LeftSection from "./LeftSection";
-import SignupForm from "./SignupForm";
-import styles from "./SignupPage.module.css";
+import { useNavigate } from "react-router-dom";
 
-const SignupPage = () => {
+function SignupPage() {
+  const navigate = useNavigate();
+
   return (
-    <>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Montaga&family=Poppins:wght@400;500&display=swap"
-        rel="stylesheet"
-      />
-      <main className={styles.sampleSignupPage}>
-        <section className={styles.mainframe}>
-          <LeftSection />
-          <SignupForm />
-        </section>
-      </main>
-    </>
+    <div>
+      <h2>Signup</h2>
+      <button onClick={() => navigate("/about")}>Go to About</button>
+    </div>
   );
-};
+}
 
 export default SignupPage;

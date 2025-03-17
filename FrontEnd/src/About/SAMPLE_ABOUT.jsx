@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
 import styles from "./SAMPLE_ABOUT.module.css";
-import Sidebar from "./Sidebar";
+import Sidebar from "../CommonComponents/Sidebar";
 import Header from "./Header";
-import HeroSection from "./HeroSection";
-import OptionsSection from "./OptionsSection";
+import Hero from "./Hero";
+import OptionSection from "./OptionSection";
 
 function SAMPLE_ABOUT() {
   return (
@@ -16,8 +16,8 @@ function SAMPLE_ABOUT() {
         <div className={styles.mainColumn}>
           <div className={styles.mainContent}>
             <Header />
-            <HeroSection />
-            <OptionsSection />
+            <Hero />
+            <OptionSection />
           </div>
         </div>
       </div>
