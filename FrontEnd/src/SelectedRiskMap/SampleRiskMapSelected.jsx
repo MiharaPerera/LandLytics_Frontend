@@ -1,6 +1,5 @@
-"use client";
 import React from "react";
-import Sidebar from "./Sidebar";
+import Sidebar from "../CommonComponents/Sidebar";
 import MainContent from "./MainContent";
 import styles from "./SampleRiskMapSelected.module.css";
 

@@ -6,6 +6,8 @@ import AboutPage from "./About/SAMPLE_ABOUT.jsx";
 import SAMPLE_REG_MAIN from "./Sample main/SAMPLE_REG_MAIN";
 import RegulationFilterPage from "./sample reg filter/RegulationFilterPage";
 import RegulationReport from "./Regulations/RegulationReport"
+import SampleRiskMapMain from "./MainRiskMap/SampleRiskMapMain";
+import SampleRiskMapSelected from "./SelectedRiskMap/SampleRiskMapSelected";
 
 function App() {
   return (
@@ -29,7 +31,14 @@ function App() {
         {/* Regulation Filtering Page */}
         <Route path="/regulation-filter" element={<RegulationFilterPage />} />
 
+        {/* Regulation Report Page */}
         <Route path="/regulation-report" element={<RegulationReport />} />
+
+        {/* Risk Map Page */}
+        <Route path="/risk-maps" element={<SampleRiskMapMain />} />
+
+        {/* Risk Map Selected Page */}
+                <Route path="/risk-map-selected" element={<SampleRiskMapSelected />} />
       </Routes>
     </Router>
   );
