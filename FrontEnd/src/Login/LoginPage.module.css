@@ -1,4 +1,4 @@
-.loginPage {
+/*.loginPage {
   background-color: #584d41;
   flex-direction: column;
   justify-content: center;
@@ -125,4 +125,213 @@
 
 .signupLink:hover {
   text-decoration: underline;
+}*/
+
+/* Main Container */
+.loginContainer {
+  display: flex;
+  min-height: 100vh;
+  background-color: #584d41;
+  justify-content: center;
+  align-items: center;
 }
+
+.loginCard {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  background-color: white;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+/* Left Side Image */
+.imageSection {
+  width: 50%;
+  position: relative;
+}
+
+.imageSection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+.logoImage {
+  padding-top: 300px;
+  width: 30%;
+  height: 30%;
+  object-fit: contain;
+}
+
+.tagline {
+  padding-bottom: 350px;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  max-width: 80%;
+  font-family: "Montaga", serif;
+}
+
+/* Right Section */
+.rightSection {
+  width: 50%;
+  background-color: white;
+  padding: 40px 80px;
+}
+
+.loginTitle {
+  font-size: 32px;
+  font-family: "Montaga", serif;
+  color: #322e29;
+  text-align: left;
+}
+
+/* Form Styling */
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.label {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: #322e29;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  border: 1px solid #dadada;
+  border-radius: 50px;
+  padding: 10px 20px;
+  background: #faf9f8;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.icon {
+  color: #807567;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.inputField {
+  width: 100%;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 16px;
+  color: #807567;
+}
+
+/* Remember Me & Forgot Password Row */
+.rememberForgotRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Remember Me */
+.rememberMe {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #322e29;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Forgot Password */
+.forgotPassword {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.forgotPassword:hover {
+  text-decoration: underline;
+}
+
+
+/* Login Button */
+.loginButton {
+  background-color: #433c33;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 70px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.loginButton:hover {
+  background-color: #322e29;
+}
+
+/* Sign Up Redirect */
+.signupRedirect {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.signupLink {
+  color: #007bff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.signupLink:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  .loginCard {
+    flex-direction: column;
+  }
+  .imageSection {
+    width: 100%;
+    height: 300px;
+  }
+  .rightSection {
+    width: 100%;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 640px) {
+  .rightSection {
+    padding: 20px;
+  }
+  .tagline {
+    font-size: 18px;
+  }
+  .loginTitle {
+    font-size: 24px;
+  }
+  .loginButton {
+    width: 90%;
+  }
+}
+

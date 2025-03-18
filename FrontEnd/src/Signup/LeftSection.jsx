@@ -4,7 +4,7 @@ import styles from "./SignupPage.module.css";
 const LeftSection = () => {
   return (
       <section className={styles.leftSection}>
-          <div className={styles.backgroundImage}>
+          <div className={styles.imageSection}>
               <img src="/assets/loginSignupImage.png" alt="Signup Background"/>
           </div>
           <div className={styles.overlay}>
