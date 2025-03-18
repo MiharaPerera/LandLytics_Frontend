@@ -246,8 +246,9 @@
 
 
 .logoImage {
-  width: 130px;
-  height: 130px;
+  padding-top: 300px;
+  width: 30%;
+  height: 30%;
   object-fit: contain;
   position: relative;
   z-index: 10;
