@@ -1,3 +1,26 @@
+import React from "react";
+import { useLocation } from "react-router-dom";
+import styles from "./InputDesign.module.css";
+import RegulationItem from "./RegulationItem";
+
+const RegulationReport = () => {
+  const location = useLocation();
+  const filters = location.state?.filters || {};
+
+  const regulations = [
+    {
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at congue mauris, vel lacinia magna. Pellentesque vel sem et eros porta rutrum. Vivamus mattis ullamcorper mi at convallis. Mauris tempor imperdiet.",
+      citation: "(Regulation 34.c. , Document D12-A, Colombo Zonal)",
+    },
+    {
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at congue mauris, vel lacinia magna. Pellentesque vel sem et eros porta rutrum. Vivamus mattis ullamcorper mi at convallis. Mauris tempor imperdiet.",
+      citation: "(Regulation 34.c. , Document D12-A, Colombo Zonal)",
+    },
+    {
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at congue mauris, vel lacinia magna. Pellentesque vel sem et eros porta rutrum. Vivamus mattis ullamcorper mi at convallis. Mauris tempor imperdiet.",
+      citation: "(Regulation 34.c. , Document D12-A, Colombo Zonal)",
+    },
+    {
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at congue mauris, vel lacinia magna. Pellentesque vel sem et eros porta rutrum. Vivamus mattis ullamcorper mi at convallis. Mauris tempor imperdiet.",
       citation: "(Regulation 34.c. , Document D12-A, Colombo Zonal)",
     },

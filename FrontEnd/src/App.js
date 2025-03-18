@@ -5,6 +5,7 @@ import SignupPage from "./Signup/SignupPage";
 import AboutPage from "./About/SAMPLE_ABOUT.jsx";
 import SAMPLE_REG_MAIN from "./Sample main/SAMPLE_REG_MAIN";
 import RegulationFilterPage from "./sample reg filter/RegulationFilterPage";
+import RegulationReport from "./Regulations/RegulationReport"
 
 function App() {
   return (
@@ -27,6 +28,8 @@ function App() {
 
         {/* Regulation Filtering Page */}
         <Route path="/regulation-filter" element={<RegulationFilterPage />} />
+
+        <Route path="/regulation-report" element={<RegulationReport />} />
       </Routes>
     </Router>
   );
