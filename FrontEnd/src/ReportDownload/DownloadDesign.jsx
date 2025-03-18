@@ -1,8 +1,7 @@
-"use client";
 import * as React from "react";
-import styles from "./InputDesign.module.css";
-import { Sidebar } from "./Sidebar";
-import { TopBar } from "./TopBar";
+import styles from "./DownloadDesign.module.css";
+import Sidebar from "../CommonComponents/Sidebar";
+import TopBar from "../CommonComponents/TopBar";
 import { DownloadStatus } from "./DownloadStatus";
 
 function InputDesign() {

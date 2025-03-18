@@ -1,11 +1,14 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
-import styles from "./InputDesign.module.css";
+import { useNavigate } from "react-router-dom";
+import styles from "./ReportDesign.module.css";
 import RegulationItem from "./RegulationItem";
 
 const RegulationReport = () => {
-  const location = useLocation();
-  const filters = location.state?.filters || {};
+  const navigate = useNavigate();
+
+  const handleDownloadClick = () => {
+      navigate("/download-report"); // Ensure the correct route is used
+  };
 
   const regulations = [
     {

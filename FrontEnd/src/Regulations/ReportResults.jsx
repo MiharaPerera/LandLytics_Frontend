@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./InputDesign.module.css";
+import styles from "./ReportDesign.module.css";
 import RegulationItem from "./RegulationItem";
 
 function ReportResults() {

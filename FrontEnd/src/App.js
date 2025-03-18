@@ -7,6 +7,8 @@ import SAMPLE_REG_MAIN from "./Sample main/SAMPLE_REG_MAIN";
 import RegulationFilterPage from "./sample reg filter/RegulationFilterPage";
 import RegulationReport from "./Regulations/RegulationReport"
 import SampleRiskMapMain from "./MainRiskMap/SampleRiskMapMain";
+import DownloadStatus from "./ReportDownload/DownloadStatus";
+import InputDesign from "./ReportDownload/DownloadDesign";
 
 function App() {
   return (
@@ -32,6 +34,12 @@ function App() {
 
         {/* Regulation Report Page */}
         <Route path="/regulation-report" element={<RegulationReport />} />
+
+//        {/* Download Report Page (Shows Download Status & Redirects Back) */}
+//        <Route path="/download-report" element={<DownloadStatus />} />
+
+        {/* Input Design Page */}
+        <Route path="/input-design" element={<InputDesign />} />
 
         {/* Risk Map Page */}
         <Route path="/risk-maps" element={<SampleRiskMapMain />} />

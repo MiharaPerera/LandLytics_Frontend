@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import styles from "./InputDesign.module.css";
+import styles from "./ReportDesign.module.css";
 import Sidebar from "./Sidebar";
 import UserProfile from "./UserProfile";
 import RegulationReport from "./RegulationReport";
