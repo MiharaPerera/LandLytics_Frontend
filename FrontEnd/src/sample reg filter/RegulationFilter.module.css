@@ -1,3 +1,4 @@
+
 .sampleRegFilter {
     background-color: #e1dfdd;
   }
@@ -284,11 +285,11 @@
     z-index: 10;
     position: relative;
   }
-  
+
   .itemsFrameOpen {
     display: flex;
   }
-  
+
   .dropdownItem {
     padding: 12px 34px;
     cursor: pointer;
@@ -303,22 +304,22 @@
     font-weight: 500;
     line-height: 18px;
   }
-  
+
   .dropdownItem:hover,
   .activeItem {
     background-color: #f0eeec;
   }
-  
+
   .dropdownItem:first-child {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
   }
-  
+
   .dropdownItem:last-child {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
   }
-  
+
   @media (width<=991px) {
     .itemsFrame {
       max-width: 100%;
@@ -552,4 +553,3 @@
       max-width: 100%;
     }
   }
-  
