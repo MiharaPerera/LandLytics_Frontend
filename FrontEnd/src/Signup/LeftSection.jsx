@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./SignupPage.module.css";
 
 const LeftSection = () => {
-  return (
+    return (
       <section className={styles.leftSection}>
           <div className={styles.imageSection}>
               <img src="/assets/loginSignupImage.png" alt="Signup Background"/>

@@ -49,13 +49,12 @@ function LoginForm() {
             </div>
           </div>
 
-          {/* Remember Me + Forgot Password Row */}
           <div className={styles.rememberForgotRow}>
             <label className={styles.rememberMe}>
               <input type="checkbox" />
               Remember Me
             </label>
-            <a href="/forgot-password" className={styles.forgotPassword}>Forgot Password?</a>
+            <a href="/signup" className={styles.forgotPassword}>Forgot Password?</a>
           </div>
 
           <button type="submit" className={styles.loginButton}>Login</button>
