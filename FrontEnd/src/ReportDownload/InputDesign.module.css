@@ -1,0 +1,140 @@
+.pageContainer {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+}
+
+.sidebar {
+  background-color: #907e6c;
+  flex-shrink: 0;
+  width: 435px;
+  padding-top: 17px;
+}
+
+@media (width<=991px) {
+  .sidebar {
+    width: 300px;
+  }
+}
+
+@media (width<=640px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+.logo {
+  width: 130px;
+  height: 119px;
+  margin-left: 21px;
+}
+
+.navigation {
+  flex-direction: column;
+  margin-top: 4px;
+  padding: 12px 0;
+  display: flex;
+}
+
+.navLink {
+  color: #fff;
+  height: 121px;
+  padding: 40px 97px;
+  font-family: Poppins, sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+@media (width<=991px) {
+  .navLink {
+    padding: 30px 40px;
+    font-size: 24px;
+  }
+}
+
+.mainContent {
+  flex-direction: column;
+  flex: 1;
+  display: flex;
+}
+
+.topBar {
+  background-color: #faf9f8;
+  justify-content: flex-end;
+  align-items: center;
+  height: 145px;
+  padding: 35px 37px;
+  display: flex;
+}
+
+.mainSection {
+  background: #d3d3d3
+    url(https://cdn.builder.io/api/v1/image/assets/TEMP/c576adeab795f04b7cf62a9b15369ac5cbfa1d04)
+    50% / cover no-repeat;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 336px 251px;
+  display: flex;
+}
+
+@media (width<=991px) {
+  .mainSection {
+    padding: 200px 100px;
+  }
+}
+
+@media (width<=640px) {
+  .mainSection {
+    padding: 100px 20px;
+  }
+}
+
+.statusCard {
+  background-color: #fff9;
+  border-radius: 35px;
+  justify-content: center;
+  align-items: center;
+  width: 790px;
+  height: 299px;
+  display: flex;
+}
+
+@media (width<=640px) {
+  .statusCard {
+    width: 90%;
+    height: auto;
+    padding: 40px 20px;
+  }
+}
+
+.statusContent {
+  text-align: center;
+}
+
+.statusTitle {
+  color: #3b2525;
+  margin-bottom: 20px;
+  font-family: "Tiro Devanagari Hindi", serif;
+  font-size: 48px;
+  display: block;
+}
+
+@media (width<=640px) {
+  .statusTitle {
+    font-size: 32px;
+  }
+}
+
+.statusMessage {
+  color: #3b2525;
+  font-family: Poppins, sans-serif;
+  font-size: 30px;
+  display: block;
+}
+
+@media (width<=640px) {
+  .statusMessage {
+    font-size: 20px;
+  }
+}
