@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import FilterDropdown from "./FilterDropdown";
 import styles from "./RegulationFilter.module.css";
-import Sidebar from "./Sidebar";
+import Sidebar from "../CommonComponents/Sidebar";
 import TopBar from "./TopBar";
 
 

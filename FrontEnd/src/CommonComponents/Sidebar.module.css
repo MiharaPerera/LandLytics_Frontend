@@ -1,7 +1,11 @@
 .sidebarColumn {
   flex-direction: column;
-  width: 25%;
+  width: 350px;
   display: flex;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: 0;
 }
 
 .sidebar {
@@ -10,10 +14,10 @@
   flex-direction: column;
   flex-grow: 1;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   padding-top: 17px;
   font-family: Poppins, sans-serif;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 400;
   display: flex;
 }
@@ -21,66 +25,44 @@
 .logoContainer {
   white-space: nowrap;
   flex-direction: column;
-  width: 261px;
-  max-width: 100%;
-  margin-left: 21px;
   display: flex;
+  text-align: center;
+  padding: 1px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 
 .logo {
-  aspect-ratio: 1.09;
+  aspect-ratio: 0;
   object-fit: contain;
-  width: 130px;
+  width: 100px;
   max-width: 100%;
 }
 
-.regulations {
-  margin-top: 49px;
-  padding-left: 70px;
-}
 
-.riskMaps {
-  background-color: #584d41;
-  margin-top: 39px;
-  padding: 40px 70px;
-}
 
 .navLinks {
   list-style: none;
   padding: 0;
-  flex-direction: column;
-  align-items: start;
-  gap: 79px;
-  margin-top: 40px;
-  padding-left: 80px;
-  padding-right: 80px;
-  display: flex;
+  margin-top: 30px;
 }
 
-.navLinks a {
-  color: inherit;
+.navLinks li {
+  padding: 40px 70px;
+  transition: background-color 0.3s ease;
+}
+
+.navLinks li a {
+  color: white;
   text-decoration: none;
+  display: block;
 }
 
-@media (width <= 640px) {
-  .sidebarColumn {
-    width: 100%;
-  }
+.navLinks li:hover {
+  background-color: #79695C;
+}
 
-  .sidebar {
-    height: auto;
-    padding-bottom: 40px;
-  }
-
-  .logoContainer {
-    padding-left: 20px;
-  }
-
-  .regulations {
-    padding-left: 20px;
-  }
-
-  .navLinks {
-    padding-left: 20px;
-  }
+.active {
+  background-color: #584D41;
 }

@@ -1,29 +1,39 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import styles from "./Sidebar.module.css";
 
 function Sidebar() {
+  const location = useLocation();
+
   return (
-    <aside className={styles.sidebarColumn}>
-      <nav className={styles.sidebar}>
-        <div className={styles.logoContainer}>
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets/eef3932ae5614d2699fa887aab7e745d/a6e75c6a65e7127f6c9a5c7eef5c6de6b5481928c83100361df4d707554b831a?placeholderIfAbsent=true"
-            alt="Logo"
-            className={styles.logo}
-          />
-{/*           <h2 className={styles.regulations}>REGULATIONS</h2> */}
-        </div>
-{/*         <div className={styles.riskMaps}>RISK MAPS</div> */}
-        <ul className={styles.navLinks}>
-          <li><Link to="/regulations">Regulations</Link></li>
-          <li><Link to="/risk-maps">Risk Maps</Link></li>
-          <li><Link to="/plan-annotations">Plan Annotations</Link></li>
-          <li><Link to="/ai-chatbot">AI Chatbot</Link></li>
-          <li><Link to="/about">About</Link></li>
-        </ul>
-      </nav>
-    </aside>
+      <aside className={styles.sidebarColumn}>
+        <nav className={styles.sidebar}>
+          <div className={styles.logoContainer}>
+            <img
+                src="/assets/Light%20BG%20JPG.png"
+                alt="Logo"
+                className={styles.logo}
+            />
+          </div>
+          <ul className={styles.navLinks}>
+            <li className={location.pathname === "/regulations" || location.pathname === "/regulation-filter" ? styles.active : ""}>
+              <Link to="/regulations">REGULATIONS</Link>
+            </li>
+            <li className={location.pathname === "/risk-maps" ? styles.active : ""}>
+              <Link to="/risk-maps">RISK MAPS</Link>
+            </li>
+            <li className={location.pathname === "/plan-annotations" ? styles.active : ""}>
+              <Link to="/plan-annotations">PLAN ANNOTATIONS</Link>
+            </li>
+            <li className={location.pathname === "/ai-chatbot" ? styles.active : ""}>
+              <Link to="/ai-chatbot">AI CHATBOT</Link>
+            </li>
+            <li className={location.pathname === "/about" ? styles.active : ""}>
+              <Link to="/about">ABOUT</Link>
+            </li>
+          </ul>
+        </nav>
+      </aside>
   );
 }
 
