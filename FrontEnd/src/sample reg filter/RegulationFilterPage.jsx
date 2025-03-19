@@ -48,37 +48,39 @@ function RegulationFilterPage() {
 
                       {/* Dropdown Filters */}
                       <div className={styles.filterSection}>
+                          <br/>
                           <h3>Land Subdivision</h3>
                           <FilterDropdown placeholderText="Eg: General Requirements"
                                           onChange={(value) => handleFilterChange("subdivision", value)}/>
-
+                          <br/><br/>
                           <h3>Land Development</h3>
                           <FilterDropdown placeholderText="Eg: Street"
                                           onChange={(value) => handleFilterChange("development", value)}/>
-
+                          <br/><br/>
                           <h3>Infrastructure</h3>
                           <FilterDropdown placeholderText="Eg: Road Access Rules"
                                           onChange={(value) => handleFilterChange("infrastructure", value)}/>
-
+                          <br/><br/>
                           <h3>Community and Recreation</h3>
                           <FilterDropdown placeholderText="Eg: Community Space Requirement"
                                           onChange={(value) => handleFilterChange("community", value)}/>
-
+                          <br/><br/>
                           <h3>Residential Development</h3>
                           <FilterDropdown placeholderText="Eg: Subdivision Exemption"
                                           onChange={(value) => handleFilterChange("residential", value)}/>
-
+                          <br/><br/>
                           <h3>Building Development</h3>
                           <FilterDropdown placeholderText="Eg: Development Permit Validity"
                                           onChange={(value) => handleFilterChange("building", value)}/>
-
+                          <br/><br/>
                           <h3>Planning and Surveying</h3>
                           <FilterDropdown placeholderText="Eg: Site Plan Requirements"
                                           onChange={(value) => handleFilterChange("planning", value)}/>
-
+                          <br/><br/>
                           <h3>Building Safety</h3>
                           <FilterDropdown placeholderText="Eg: Fire Safety Compliance"
                                           onChange={(value) => handleFilterChange("safety", value)}/>
+                          <br/><br/><br/>
                       </div>
 
                       {/* Generate Report Button */}

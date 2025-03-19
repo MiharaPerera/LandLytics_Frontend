@@ -16,11 +16,21 @@ function Sidebar() {
                     />
                 </div>
                 <ul className={styles.navLinks}>
-                    {["REGULATIONS", "RISK MAPS", "PLAN ANNOTATIONS", "AI CHATBOT", "ABOUT"].map((item, index) => (
-                        <li key={index} className={location.pathname === `/${item.toLowerCase().replace(" ", "-")}` ? styles.active : ""}>
-                            <Link to={`/${item.toLowerCase().replace(" ", "-")}`}>{item}</Link>
-                        </li>
-                    ))}
+                    <li className={location.pathname === "/regulations" || location.pathname === "/regulation-filter" ? styles.active : ""}>
+                        <Link to="/regulations">REGULATIONS</Link>
+                    </li>
+                    <li className={location.pathname === "/risk-maps" ? styles.active : ""}>
+                        <Link to="/risk-maps">RISK MAPS</Link>
+                    </li>
+                    <li className={location.pathname === "/plan-annotations" ? styles.active : ""}>
+                        <Link to="/plan-annotations">PLAN ANNOTATIONS</Link>
+                    </li>
+                    <li className={location.pathname === "/ai-chatbot" ? styles.active : ""}>
+                        <Link to="/ai-chatbot">AI CHATBOT</Link>
+                    </li>
+                    <li className={location.pathname === "/about" ? styles.active : ""}>
+                        <Link to="/about">ABOUT</Link>
+                    </li>
                 </ul>
             </nav>
         </aside>
