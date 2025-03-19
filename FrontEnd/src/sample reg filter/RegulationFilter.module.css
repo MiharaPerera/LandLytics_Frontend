@@ -1,4 +1,26 @@
 
+.container {
+  display: flex;
+  padding-top: 100px;
+}
+
+.mainContent {
+  flex-grow: 1;
+  margin-left: 350px;
+  padding-top: 100px;
+  width: calc(100% - 350px);
+  overflow-y: auto;
+  height: 100vh;
+  padding: 20px;
+}
+
+.contentArea {
+  padding: 20px;
+  font-family: Poppins, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .sampleRegFilter {
     background-color: #e1dfdd;
   }
@@ -553,3 +575,21 @@
       max-width: 100%;
     }
   }
+
+.generateReportButton {
+  background-color: #433c33;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+  margin-top: 20px;
+  width: 20%;
+}
+
+.generateReportButton:hover {
+  background-color: #322e29;
+}
