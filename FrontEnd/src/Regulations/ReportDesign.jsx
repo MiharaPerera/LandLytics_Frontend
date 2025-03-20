@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import styles from "./ReportDesign.module.css";
 import Sidebar from "../CommonComponents/Sidebar";
