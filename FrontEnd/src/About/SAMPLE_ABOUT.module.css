@@ -136,22 +136,13 @@
     flex-direction: column;
     align-items: flex-end;
     width: 100%;
-    min-height: 691px;
-    padding: 181px 80px 295px;
-    font-family:
-      Montaga,
-      -apple-system,
-      Roboto,
-      Helvetica,
-      sans-serif;
-    font-size: 40px;
+    min-height: 500px;
     position: relative;
   }
-
+  
   @media (width <= 991px) {
     .heroSection {
-      max-width: 100%;
-      padding: 100px 20px;
+      min-height: 400px;
     }
   }
 
@@ -168,27 +159,36 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: -59px;
-    position: relative;
+    position: absolute;
+    top: 50%;
+    right: 80px;
+    transform: translateY(-50%);
+    color: white;
     z-index: 1;
+    text-align: right;
   }
-
+  
   @media (width <= 991px) {
     .heroContent {
-      margin-bottom: 10px;
+      right: 20px;
+      padding: 0 20px;
     }
   }
 
   .heroTitle {
     margin: 0;
-    font-size: 40px;
+    font-family: Montaga, serif;
+    font-size: 45px;
     font-weight: normal;
+    color: white;
   }
-
+  
   .heroSubtitle {
     margin: 0;
-    font-size: 40px;
+    font-family: Montaga, serif;
+    font-size: 43px;
     font-weight: normal;
+    color: white;
   }
 
   .heroProperty {
@@ -205,25 +205,18 @@
 
   .heroDescription {
     margin-top: 25px;
-    font-family:
-      Poppins,
-      -apple-system,
-      Roboto,
-      Helvetica,
-      sans-serif;
-    font-size: 14px;
+    font-family: Poppins, sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    color: white;
   }
-
+  
   .heroSubDescription {
-    align-self: stretch;
     margin-top: 6px;
-    font-family:
-      Poppins,
-      -apple-system,
-      Roboto,
-      Helvetica,
-      sans-serif;
-    font-size: 14px;
+    font-family: Poppins, sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    color: white;
   }
 
   /* Options Section */
