@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import styles from "./ReportDesign.module.css";
 import Sidebar from "../CommonComponents/Sidebar";
 import RegulationItem from "./RegulationItem";
+import TopBar from "./TopBar";
 
 const RegulationReport = () => {
   const navigate = useNavigate();
@@ -11,6 +12,7 @@ const RegulationReport = () => {
       navigate("/download-report"); // Ensure the correct route is used
   };
 
+  //this will be an empty array in the final output. Will have to find a way to display the relevant regulations when integrating frontend with backend
   const regulations = [
     {
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at congue mauris, vel lacinia magna. Pellentesque vel sem et eros porta rutrum. Vivamus mattis ullamcorper mi at convallis. Mauris tempor imperdiet.",
@@ -33,29 +35,25 @@ const RegulationReport = () => {
   return (
     <div className={styles.pageContainer}>
       <Sidebar />
+      <TopBar />
 
-        <section className={styles.div11}>
-          <h1 className={styles.div12}>REPORT COMPLETE!</h1>
-          <p className={styles.div13}>23 applicable regulations identified</p>
+        <section>
+          <h1>REPORT COMPLETE!</h1>
+          <p>23 applicable regulations identified</p>
 
-          <section className={styles.div14}>
+          <section className={styles.regContainer}>
             <h2 className={styles.div15}>Zonal Regulations</h2>
 
             {regulations.map((regulation, index) => (
-              <RegulationItem
-                key={index}
-                text={regulation.text}
-                citation={regulation.citation}
-              />
+              <RegulationItem key={index} text={regulation.text} citation={regulation.citation}/>
             ))}
           </section>
 
-          <div className={styles.div28}>
-            <span>View Report</span>
-            <span className={styles.span}>»</span>
+          <div className={styles.viewReport}>
+            <span>View Report »</span>
           </div>
 
-          <button className={styles.button} onClick={handleDownloadClick}>DOWNLOAD REPORT</button>
+          <button className={styles.downloadButton} onClick={handleDownloadClick}>DOWNLOAD REPORT</button>
         </section>
     </div>
   );

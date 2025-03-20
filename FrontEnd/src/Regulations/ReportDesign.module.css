@@ -5,195 +5,62 @@
   padding-top: 116px;
   width: calc(100% - 350px);
   height: 100vh;
-  padding: 20px;
+  overflow-x: hidden;
 }
 
-.div {
-  background-color: #e1dfdd;
-  min-height: 100vh;
-  display: flex;
-}
-@media (width<=640px) {
-  .div {
-    flex-direction: column;
-  }
-}
-.div2 {
-  background-color: #907e6c;
-  width: 435px;
-  padding-top: 17px;
-}
-@media (width<=991px) {
-  .div2 {
-    width: 300px;
-  }
-}
-@media (width<=640px) {
-  .div2 {
-    width: 100%;
-    padding-bottom: 20px;
-  }
-}
-.logo {
-  width: 130px;
-  height: 119px;
-  margin-left: 21px;
-}
-.nav {
-  margin-top: 16px;
-}
-@media (width<=640px) {
-  .nav {
-    display: none;
-  }
-}
-.div3 {
-  color: #fff;
-  height: 121px;
-  padding: 40px 97px;
-  font-family: Poppins, sans-serif;
-  font-size: 28px;
-}
-@media (width<=991px) {
-  .div3 {
-    padding: 30px 40px;
-    font-size: 24px;
-  }
-}
-.div4 {
-  color: #fff;
-  height: 121px;
-  padding: 40px 97px;
-  font-family: Poppins, sans-serif;
-  font-size: 28px;
-}
-@media (width<=991px) {
-  .div4 {
-    padding: 30px 40px;
-    font-size: 24px;
-  }
-}
-.div5 {
-  color: #fff;
-  height: 121px;
-  padding: 40px 97px;
-  font-family: Poppins, sans-serif;
-  font-size: 28px;
-}
-@media (width<=991px) {
-  .div5 {
-    padding: 30px 40px;
-    font-size: 24px;
-  }
-}
-.div6 {
-  color: #fff;
-  height: 121px;
-  padding: 40px 97px;
-  font-family: Poppins, sans-serif;
-  font-size: 28px;
-}
-@media (width<=991px) {
-  .div6 {
-    padding: 30px 40px;
-    font-size: 24px;
-  }
-}
-.div7 {
-  color: #fff;
-  height: 121px;
-  padding: 40px 97px;
-  font-family: Poppins, sans-serif;
-  font-size: 28px;
-}
-@media (width<=991px) {
-  .div7 {
-    padding: 30px 40px;
-    font-size: 24px;
-  }
-}
-.div8 {
-  flex: 1;
-}
-@media (width<=640px) {
-  .div8 {
-    min-height: 0;
-  }
-}
-.div9 {
-  background-color: #faf9f8;
-  justify-content: flex-end;
-  align-items: center;
-  height: 145px;
-  padding: 35px;
-  display: flex;
-}
-.div10 {
-  margin-right: 37px;
-}
-.div11 {
-  padding: 40px 128px;
-}
-@media (width<=991px) {
-  .div11 {
-    padding: 40px;
-  }
-}
-@media (width<=640px) {
-  .div11 {
-
-    padding: 20px;
-  }
-}
-.div12 {
+h1 {
   color: #322e29;
+  padding-left: 100px;
+  margin-top: 60px;
   margin-bottom: 30px;
-  font-family:
-    Tiro Devanagari Hindi,
-    serif;
-  font-size: 36px;
-}
-@media (width<=640px) {
-  .div12 {
-    text-align: center;
-    font-size: 24px;
-  }
-}
-.div13 {
-  color: #322e29;
-  margin-bottom: 50px;
-  font-family: Poppins, sans-serif;
+  font-family: "Montaga", serif;
   font-size: 30px;
 }
 @media (width<=640px) {
-  .div13 {
+  h1 {
     text-align: center;
     font-size: 24px;
   }
 }
-.div14 {
+p {
+  color: #322e29;
+  margin-top:30px;
+  padding-left: 100px;
+  font-family: Poppins, sans-serif;
+  font-size: 22px;
+}
+@media (width<=640px) {
+  p {
+    text-align: center;
+    font-size: 24px;
+  }
+}
+.regContainer {
+  margin-left: 100px;
+  margin-right: 75px;
+  margin-top: 20px;
+  margin-bottom: 40px;
   background-color: #fff;
   border-radius: 35px;
-  margin-bottom: 40px;
   padding: 36px;
+  height: 360px;
+  overflow: hidden;
+  overflow-y: auto;
 }
 @media (width<=991px) {
-  .div14 {
+  .regContainer {
     padding: 25px;
   }
 }
 @media (width<=640px) {
-  .div14 {
+  .regContainer {
     padding: 15px;
   }
 }
 .div15 {
   color: #000;
   margin-bottom: 20px;
-  font-family:
-    Tiro Devanagari Hindi,
-    serif;
-  font-size: 34px;
+  font-family: Tiro Devanagari Hindi, serif;font-size: 34px;
 }
 @media (width<=640px) {
   .div15 {
@@ -224,103 +91,38 @@
   font-size: 16px;
   font-style: italic;
 }
-.div19 {
-  margin-bottom: 30px;
-}
-.div20 {
-  color: #000;
-  margin-bottom: 12px;
-  font-family:
-    Tiro Devanagari Hindi,
-    serif;
-  font-size: 20px;
-}
-@media (width<=640px) {
-  .div20 {
-    font-size: 18px;
-  }
-}
-.div21 {
-  color: #000;
-  font-family:
-    Tiro Devanagari Hindi,
-    serif;
-  font-size: 16px;
-  font-style: italic;
-}
-.div22 {
-  margin-bottom: 30px;
-}
-.div23 {
-  color: #000;
-  margin-bottom: 12px;
-  font-family:
-    Tiro Devanagari Hindi,
-    serif;
-  font-size: 20px;
-}
-@media (width<=640px) {
-  .div23 {
-    font-size: 18px;
-  }
-}
-.div24 {
-  color: #000;
-  font-family:
-    Tiro Devanagari Hindi,
-    serif;
-  font-size: 16px;
-  font-style: italic;
-}
-.div25 {
-  margin-bottom: 30px;
-}
-.div26 {
-  color: #000;
-  margin-bottom: 12px;
-  font-family:
-    Tiro Devanagari Hindi,
-    serif;
-  font-size: 20px;
-}
-@media (width<=640px) {
-  .div26 {
-    font-size: 18px;
-  }
-}
-.div27 {
-  color: #000;
-  font-family:
-    Tiro Devanagari Hindi,
-    serif;
-  font-size: 16px;
-  font-style: italic;
-}
-.div28 {
+
+.viewReport {
   text-align: right;
   color: #322e29;
   cursor: pointer;
   margin-bottom: 40px;
+  margin-left: 20px;
   font-family: Poppins, sans-serif;
-  font-size: 24px;
+  font-size: 16px;
+  font-weight: lighter;
 }
-.span {
-  margin-left: 8px;
-}
-.button {
-  color: #faf9f8;
+
+.downloadButton {
+  color: white;
   cursor: pointer;
   background-color: #433c33;
   border: none;
+  padding: 12px 30px;
   border-radius: 50px;
-  width: 360px;
-  height: 68px;
+  width: 270px;
+  height: 50px;
   margin: 0 auto;
+  transition: 0.3s;
   font-family: Poppins, sans-serif;
-  font-size: 26px;
+  font-size: 18px;
+}
+
+.downloadButton:hover {
+  background-color: #322e29;
 }
 @media (width<=640px) {
-  .button {
+  .downloadButton {
     width: 100%;
     font-size: 22px;
   }
