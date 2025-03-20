@@ -5,7 +5,7 @@
   padding-top: 116px;
   width: calc(100% - 350px);
   height: 100vh;
-  overflow-x: hidden;
+
 }
 
 h1 {
@@ -58,39 +58,43 @@ p {
     padding: 15px;
   }
 }
-.div15 {
+
+.regType {
   color: #000;
   margin-bottom: 20px;
-  font-family: Tiro Devanagari Hindi, serif;font-size: 34px;
+  font-family: Tiro Devanagari Hindi, serif;
+  font-size: 25px;
 }
+
 @media (width<=640px) {
   .div15 {
-    font-size: 28px;
+    font-size: 25px;
   }
 }
-.div16 {
-  margin-bottom: 30px;
+
+.article {
+  margin-bottom: 10px;
 }
-.div17 {
+
+.regText {
   color: #000;
-  margin-bottom: 12px;
-  font-family:
-    Tiro Devanagari Hindi,
-    serif;
-  font-size: 20px;
+  padding-left: 10px;
+  margin-bottom: 6px;
+  font-family: Tiro Devanagari Hindi, serif;
+  font-size: 18px;
 }
 @media (width<=640px) {
-  .div17 {
+  .regText {
     font-size: 18px;
   }
 }
-.div18 {
+
+.regCite {
   color: #000;
-  font-family:
-    Tiro Devanagari Hindi,
-    serif;
+  font-family: Tiro Devanagari Hindi, serif;
   font-size: 16px;
   font-style: italic;
+  padding-left: 10px;
 }
 
 .viewReport {
@@ -110,11 +114,11 @@ p {
   cursor: pointer;
   background-color: #433c33;
   border: none;
-  padding: 30px;
+  padding: 10px;
   border-radius: 50px;
   width: 270px;
   height: 50px;
-  margin: 0 auto;
+  margin-left: 100px;
   transition: 0.3s;
   font-family: Poppins, sans-serif;
   font-size: 18px;
@@ -125,7 +129,7 @@ p {
 }
 @media (width<=640px) {
   .downloadButton {
-    width: 100%;
-    font-size: 22px;
+    margin-right: 20px;
+    font-size: 18px;
   }
 }

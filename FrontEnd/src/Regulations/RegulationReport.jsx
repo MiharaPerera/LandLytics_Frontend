@@ -42,7 +42,7 @@ const RegulationReport = () => {
           <p>23 applicable regulations identified</p>
 
           <section className={styles.regContainer}>
-            <h2 className={styles.div15}>Zonal Regulations</h2>
+            <h2 className={styles.regType}>Zonal Regulations</h2>
 
             {regulations.map((regulation, index) => (
               <RegulationItem key={index} text={regulation.text} citation={regulation.citation}/>
