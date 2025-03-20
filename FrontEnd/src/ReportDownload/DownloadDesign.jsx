@@ -1,10 +1,10 @@
 import * as React from "react";
 import styles from "./DownloadDesign.module.css";
 import Sidebar from "../CommonComponents/Sidebar";
-import TopBar from "../CommonComponents/TopBar";
+import TopBar from "../sample reg filter/TopBar";
 import { DownloadStatus } from "./DownloadStatus";
 
-function InputDesign() {
+function DownloadDesign() {
   return (
     <>
       <link
@@ -22,4 +22,4 @@ function InputDesign() {
   );
 }
 
-export default InputDesign;
+export default DownloadDesign;

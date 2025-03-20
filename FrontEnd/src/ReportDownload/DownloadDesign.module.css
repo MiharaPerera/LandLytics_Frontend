@@ -74,8 +74,11 @@
   flex: 1;
   justify-content: center;
   align-items: center;
-  padding: 336px 251px;
+  /*padding: 336px 251px;*/
   display: flex;
+  margin-left: 350px;
+  padding-top: 100px;
+  width: calc(100% - 350px);
 }
 
 @media (width<=991px) {
