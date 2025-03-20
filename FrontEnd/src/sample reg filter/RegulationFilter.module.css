@@ -50,12 +50,7 @@
     width: 593px;
     max-width: 100%;
     margin-top: 25px;
-    font-family:
-      Poppins,
-      -apple-system,
-      Roboto,
-      Helvetica,
-      sans-serif;
+    font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif;
     font-size: 12px;
     font-weight: 500;
     line-height: 18px;
@@ -68,8 +63,8 @@
     justify-content: space-between;
     align-items: center;
     gap: 40px 100px;
-    width: 100%;
-    padding: 15px 34px;
+    width: 50%;
+    padding: 10px 34px;
     display: flex;
     border: none;
     cursor: pointer;

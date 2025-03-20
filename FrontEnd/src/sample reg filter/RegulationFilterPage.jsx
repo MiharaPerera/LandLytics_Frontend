@@ -47,7 +47,7 @@ function RegulationFilterPage() {
                       <h1 className={styles.title}>FILTER REGULATIONS BY...</h1>
 
                       {/* Dropdown Filters */}
-                      <div className={styles.filterSection}>
+                      <div>
                           <br/>
                           <h3>Land Subdivision</h3>
                           <FilterDropdown placeholderText="Eg: General Requirements"
