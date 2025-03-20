@@ -1,7 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "./SAMPLE_REG_MAIN.module.css";
 
 function SearchSection() {
+    const navigate = useNavigate();
+
   return (
     <section>
       <div className={styles.searchbyzone}>
@@ -16,7 +19,8 @@ function SearchSection() {
           className={styles.amInputDontrename}
         />
       </div>
-      <button className={styles.regfilterbutton}>TRY REGULATION FILTER</button>
+      <button className={styles.regfilterbutton}
+      onClick={() => navigate("/regulation-filter")}>TRY REGULATION FILTER</button>
     </section>
   );
 }
