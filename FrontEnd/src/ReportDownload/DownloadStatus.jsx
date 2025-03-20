@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./DownloadDesign.module.css";
+import Sidebar from "../CommonComponents/Sidebar";
 
 export function DownloadStatus() {
     const navigate = useNavigate(); //Initialize navigation function
@@ -28,16 +29,20 @@ export function DownloadStatus() {
 //       }, [navigate]);
 
   return (
-    <main className={styles.mainSection}>
-      <section className={styles.statusCard}>
-        <div className={styles.statusContent}>
-          <h1 className={styles.statusTitle}>DOWNLOAD COMPLETE!</h1>
-          <p className={styles.statusMessage}>
-            Redirecting to preview in {countdown}s...
-          </p>
-        </div>
-      </section>
-    </main>
+    <div className={styles.pageContainer}>
+        <Sidebar />
+
+        <main className={styles.mainSection}>
+          <section className={styles.statusCard}>
+            <div className={styles.statusContent}>
+              <h1 className={styles.statusTitle}>DOWNLOAD COMPLETE!</h1>
+              <p className={styles.statusMessage}>
+                Redirecting to preview in {countdown}s...
+              </p>
+            </div>
+          </section>
+        </main>
+    </div>
   );
 }
 
