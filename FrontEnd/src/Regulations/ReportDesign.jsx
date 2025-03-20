@@ -1,3 +1,4 @@
+/*
 "use client";
 import React from "react";
 import styles from "./ReportDesign.module.css";
@@ -25,4 +26,4 @@ function InputDesign() {
   );
 }
 
-export default InputDesign;
+export default InputDesign;*/

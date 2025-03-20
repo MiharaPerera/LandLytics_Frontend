@@ -14,15 +14,17 @@
 }
 
 .backButton {
+    background: none;
+    border: none;
     display: flex;
-    justify-content: flex-start; /* Align back button to the left */
+    justify-content: flex-start;
 }
 
 
 .img2 {
     aspect-ratio: 1;
     object-fit: contain;
-    width: 75px;
+    width: 65px;
 }
 
 .img3 {

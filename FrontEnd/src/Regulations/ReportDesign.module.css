@@ -1,3 +1,13 @@
+.pageContainer {
+  background-color: #e1dfdd;
+  flex-grow: 1;
+  margin-left: 350px;
+  padding-top: 116px;
+  width: calc(100% - 350px);
+  height: 100vh;
+  padding: 20px;
+}
+
 .div {
   background-color: #e1dfdd;
   min-height: 100vh;
@@ -131,6 +141,7 @@
 }
 @media (width<=640px) {
   .div11 {
+
     padding: 20px;
   }
 }

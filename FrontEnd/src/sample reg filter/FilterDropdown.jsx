@@ -1,18 +1,10 @@
 import React, { useState, useRef, useEffect } from "react";
 import styles from "./RegulationFilter.module.css";
 
-function FilterDropdown({ placeholderText, iconSrc }) {
+function FilterDropdown({ placeholderText, iconSrc, items, onChange }) {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
   const dropdownRef = useRef(null);
-
-  const items = [
-    "General Requirements",
-    "Subdivision Standards",
-    "Land Use Regulations",
-    "Zoning Requirements",
-    "Environmental Compliance",
-  ];
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -21,6 +13,7 @@ function FilterDropdown({ placeholderText, iconSrc }) {
   const handleItemClick = (item) => {
     setSelectedItem(item);
     setIsOpen(false);
+    onChange(item);
   };
 
   useEffect(() => {
@@ -37,21 +30,15 @@ function FilterDropdown({ placeholderText, iconSrc }) {
   }, []);
 
   return (
-    <div className={styles.dropdownContainer} ref={dropdownRef}>
+    <div>
       <button className={styles.header} onClick={toggleDropdown}>
         <span className={styles.exampleText}>{selectedItem || placeholderText}</span>
-        <img src={iconSrc} alt="Dropdown arrow" className={styles.img3} />
+        <img src="/assets/downArrow.png" alt="Dropdown arrow" className={styles.img3} />
       </button>
       {isOpen && (
         <div className={`${styles.itemsFrame} ${styles.itemsFrameOpen}`}>
           {items.map((item, index) => (
-            <div
-              key={index}
-              className={styles.dropdownItem}
-              onClick={() => handleItemClick(item)}
-            >
-              {item}
-            </div>
+            <div key={index} className={styles.dropdownItem} onClick={() => handleItemClick(item)}>{item}</div>
           ))}
         </div>
       )}

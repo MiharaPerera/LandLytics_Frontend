@@ -16,7 +16,7 @@ function Sidebar() {
             />
           </div>
           <ul className={styles.navLinks}>
-            <li className={location.pathname === "/regulations" || location.pathname === "/regulation-filter" ? styles.active : ""}>
+            <li className={location.pathname === "/regulations" || location.pathname === "/regulation-filter" || location.pathname === "/regulation-report" ? styles.active : ""}>
               <Link to="/regulations">REGULATIONS</Link>
             </li>
             <li className={location.pathname === "/risk-maps" ? styles.active : ""}>
