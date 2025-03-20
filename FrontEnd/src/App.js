@@ -35,8 +35,8 @@ function App() {
         {/* Regulation Report Page */}
         <Route path="/regulation-report" element={<RegulationReport />} />
 
-//        {/* Download Report Page (Shows Download Status & Redirects Back) */}
-//        <Route path="/download-report" element={<DownloadStatus />} />
+        {/* Download Report Page (Shows Download Status & Redirects Back) */}
+        <Route path="/download-report" element={<DownloadStatus />} />
 
         {/* Input Design Page */}
         <Route path="/input-design" element={<InputDesign />} />

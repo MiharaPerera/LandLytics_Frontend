@@ -51,7 +51,7 @@ const RegulationReport = () => {
         <span className={styles.span}>»</span>
       </div>
 
-      <button className={styles.button}>DOWNLOAD REPORT</button>
+      <button className={styles.button} onClick={handleDownloadClick}>DOWNLOAD REPORT</button>
     </section>
   );
 };
