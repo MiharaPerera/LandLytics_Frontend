@@ -9,6 +9,7 @@ import RegulationReport from "./Regulations/RegulationReport"
 import SampleRiskMapMain from "./MainRiskMap/SampleRiskMapMain";
 import DownloadStatus from "./ReportDownload/DownloadStatus";
 import InputDesign from "./ReportDownload/DownloadDesign";
+import ANNOTATIONS_PAGE from "./Annotation/ANNOTATIONS_PAGE";
 
 function App() {
   return (
@@ -44,6 +45,8 @@ function App() {
         {/* Risk Map Page */}
         <Route path="/risk-maps" element={<SampleRiskMapMain />} />
 
+        {/* Plan Annotations Page */}
+        <Route path="/plan-annotations" element={<ANNOTATIONS_PAGE />} />
       </Routes>
     </Router>
   );
