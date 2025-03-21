@@ -26,20 +26,20 @@ const OptionsSection = () => {
       </h2>
       <div className={styles.optionsContainer}>
         <OptionCard
-          backgroundSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/af1fe817ef52760e2cbc21c532d3a62c7168d7cf60d708dd3475fb6faf02666f?placeholderIfAbsent=true&apiKey=961e21a64e344f339dc230b663f13664"
-          text="FILTERED REGULATIONS"
+          backgroundSrc="./assets/filteredRegulationReport.png"
+          text="FILTERED REGULATIONS REPORT"
         />
         <OptionCard
-          backgroundSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/f277339d4022d4ce349eaccadcf339da6e120d32769d83cf7d448f28c8ef19cf?placeholderIfAbsent=true&apiKey=961e21a64e344f339dc230b663f13664"
-          text="ENVIRONMENTAL"
+          backgroundSrc="./assets/environmentalRiskReport.png"
+          text="ENVIRONMENTAL RISK REPORT"
         />
         <OptionCard
-          backgroundSrc="/api/placeholder/400/320"
+          backgroundSrc="./assets/propertyPlanAnnotaion.png"
           text="PROPERTY PLAN ANNOTATION"
         />
         <OptionCard
-          backgroundSrc="/api/placeholder/400/320"
-          text="AI ChatBot"
+          backgroundSrc="./assets/chatbot.png"
+          text="AI CHATBOT"
         />
       </div>
     </section>
