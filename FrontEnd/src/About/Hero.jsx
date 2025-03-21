@@ -11,13 +11,13 @@ const HeroSection = () => {
       />
       <div className={styles.heroContent}>
         <h1 className={styles.heroTitle}>Plan your </h1>
-        <h2 className={`${styles.heroSubtitle} ${styles.heroProperty}`}>
+        <h2 className={styles.heroSubtitle}>
           property
         </h2>
-        <h2 className={`${styles.heroSubtitle} ${styles.heroDreams}`}>
+        <h2 className={styles.heroSubtitle}>
           dreams with
         </h2>
-        <h2 className={`${styles.heroSubtitle} ${styles.heroConfidence}`}>
+        <h2 className={styles.heroSubtitle}>
           confidence...
         </h2>
         <p className={styles.heroDescription}>We are committed to providing </p>
