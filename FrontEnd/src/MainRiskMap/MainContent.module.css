@@ -1,13 +1,8 @@
 .mainColumn {
   flex-direction: column;
-  width: 75%;
+  width: calc(100% - 350px);
+  margin-left: 350px; /* Match the sidebar width */
   display: flex;
-}
-
-@media (width <= 640px) {
-  .mainColumn {
-    width: 100%;
-  }
 }
 
 .contentContainer {
@@ -17,34 +12,11 @@
   display: flex;
 }
 
-.header {
-  color: #322e29;
-  background-color: #faf9f8;
-  justify-content: space-between;
-  align-items: center;
-  padding: 35px 37px 35px 80px;
-  font-family: Rosarivo, serif;
-  font-size: 60px;
-  font-weight: 400;
-  display: flex;
-}
-
-.title {
-  flex-grow: 1;
-  margin: 0;
-}
-
-.headerIcon {
-  aspect-ratio: 1;
-  object-fit: contain;
-  width: 75px;
-}
-
 .mainSection {
   flex-direction: column;
   width: 100%;
   max-width: 1079px;
-  margin: 91px auto 0;
+  margin: 40px auto 0;
   padding: 0 20px;
   display: flex;
 }
@@ -59,30 +31,27 @@
 }
 
 @media (width <= 991px) {
-  .header {
-    padding: 25px 20px;
-    font-size: 40px;
-  }
-
-  .title {
-    font-size: 36px;
+  .mainColumn {
+    width: calc(100% - 300px);
+    margin-left: 300px;
   }
 
   .mainSection {
-    margin-top: 40px;
+    margin-top: 30px;
+  }
+  
+  .subtitle {
+    font-size: 32px;
   }
 }
 
 @media (width <= 640px) {
-  .header {
-    padding: 20px;
-    font-size: 32px;
+  .mainColumn {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 120px; /* For mobile sidebar at top */
   }
-
-  .title {
-    font-size: 28px;
-  }
-
+  
   .subtitle {
     text-align: center;
     font-size: 28px;
