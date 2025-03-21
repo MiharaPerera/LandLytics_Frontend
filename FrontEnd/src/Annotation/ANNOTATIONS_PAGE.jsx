@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./ANNOTATIONS_PAGE.module.css";
 import Sidebar from "../CommonComponents/Sidebar";
-// import PropertyAnnotationHeader from "./PropertyAnnotationHeader";
 
 function AnnotationsPage() {
   return (
@@ -11,27 +10,32 @@ function AnnotationsPage() {
           <Sidebar />
         </div>
         <div className={styles.column2}>
-          <main className={styles.div4}>
-{/*             <PropertyAnnotationHeader /> */}
+          {/* Add the top bar with title */}
+          <header className={styles.headerBar}>
+            <h1 className={styles.headerTitle}>ANNOTATE PROPERTY</h1>
+            <div className={styles.userIcon}>
+            <img
+                    src="./assets/profileIcon.png"
+                    alt="Profile"
+                    className={styles.profileIcon}
+                  />
+            </div>
+          </header>
 
-            {/* Gradio Model Display */}
-            <section className={styles.annotationModel}>
-              <h1 className={styles.title}>Upload Site Plan for Annotation</h1>
-              <p className={styles.description}>
-                Submit an image, and the model will annotate it automatically.
-              </p>
-
-              {/* Embed Hugging Face Space */}
+          <main className={styles.mainContent}>
+            {/* Map container - replace the iframe with this */}
+            <div className={styles.mapContainer}>
+              {/* This would be your map component */}
+              {/* For now, we'll show the embedded map as a placeholder */}
               <iframe
                 src="https://sanali-site-plan-annotation.hf.space"
                 title="Site Plan Annotation Model"
                 width="100%"
-                height="600px"
-                style={{ border: "none", borderRadius: "10px" }}
+                height="400px"
+                style={{ border: "none", borderRadius: "8px" }}
                 allow="clipboard-read; clipboard-write; encrypted-media"
               ></iframe>
-            </section>
-
+            </div>
           </main>
         </div>
       </div>
