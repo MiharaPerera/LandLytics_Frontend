@@ -322,3 +322,8 @@
   text-align: center;
   margin: 5px 0 0 0;
 }
+
+.optionCardLink {
+  text-decoration: none;
+  color: inherit;
+}

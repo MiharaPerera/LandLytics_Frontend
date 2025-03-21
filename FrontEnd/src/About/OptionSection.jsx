@@ -1,20 +1,24 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./SAMPLE_ABOUT.module.css";
 
-const OptionCard = ({ backgroundSrc, text }) => {
+const OptionCard = ({ backgroundSrc, text, link }) => {
   return (
     <div className={styles.optionCard}>
-      <div className={styles.optionContent}>
-        <img
-          src={backgroundSrc}
-          alt={`${text} background`}
-          className={styles.optionBackground}
-        />
-        <div className={styles.optionTextWrapper}>
-          <p className={styles.optionText}>{text}</p>
-        </div>
-      </div>
+      <Link to={link} className={styles.optionCardLink}>
+          <div className={styles.optionContent}>
+            <img
+              src={backgroundSrc}
+              alt={`${text} background`}
+              className={styles.optionBackground}
+            />
+            <div className={styles.optionTextWrapper}>
+              <p className={styles.optionText}>{text}</p>
+            </div>
+          </div>
+      </Link>
     </div>
+
   );
 };
 
@@ -28,18 +32,22 @@ const OptionsSection = () => {
         <OptionCard
           backgroundSrc="./assets/filteredRegulationReport.png"
           text="FILTERED REGULATIONS REPORT"
+          link="/regulations"
         />
         <OptionCard
           backgroundSrc="./assets/environmentalRiskReport.png"
-          text="ENVIRONMENTAL RISK REPORT"
+          text="ENVIRONMENTAL RISK ANALYSIS"
+          link="/risk-maps"
         />
         <OptionCard
           backgroundSrc="./assets/propertyPlanAnnotaion.png"
           text="PROPERTY PLAN ANNOTATION"
+          link="/plan-annotations"
         />
         <OptionCard
           backgroundSrc="./assets/chatbot.png"
           text="AI CHATBOT"
+          link="/ai-chatbot"
         />
       </div>
     </section>
