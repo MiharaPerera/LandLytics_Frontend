@@ -8,7 +8,7 @@ import RegulationFilterPage from "./sample reg filter/RegulationFilterPage";
 import RegulationReport from "./Regulations/RegulationReport"
 import SampleRiskMapMain from "./MainRiskMap/SampleRiskMapMain";
 import DownloadStatus from "./ReportDownload/DownloadStatus";
-import InputDesign from "./ReportDownload/DownloadDesign";
+import DownloadDesign from "./ReportDownload/DownloadDesign";
 import ANNOTATIONS_PAGE from "./Annotation/ANNOTATIONS_PAGE";
 
 function App() {
@@ -40,7 +40,7 @@ function App() {
         <Route path="/download-report" element={<DownloadStatus />} />
 
         {/* Input Design Page */}
-        <Route path="/input-design" element={<InputDesign />} />
+        <Route path="/download-design" element={<DownloadDesign />} />
 
         {/* Risk Map Page */}
         <Route path="/risk-maps" element={<SampleRiskMapMain />} />

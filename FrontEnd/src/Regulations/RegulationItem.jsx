@@ -3,9 +3,9 @@ import styles from "./ReportDesign.module.css";
 
 const RegulationItem = ({ text, citation }) => {
   return (
-    <article className={styles.div16}>
-      <p className={styles.div17}>{text}</p>
-      <cite className={styles.div18}>{citation}</cite>
+    <article className={styles.article}>
+      <p className={styles.regText}>{text}</p>
+      <cite className={styles.regCite}>{citation}</cite>
     </article>
   );
 };

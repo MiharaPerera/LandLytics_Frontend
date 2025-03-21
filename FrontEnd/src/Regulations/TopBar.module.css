@@ -3,7 +3,7 @@
     height: 116px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding: 0 20px;
     position: fixed;
     width: calc(100% - 350px);
@@ -11,20 +11,6 @@
     left: 350px;
     z-index: 1000;
     border-bottom: 1px solid #ddd;
-}
-
-.backButton {
-    background: none;
-    border: none;
-    display: flex;
-    justify-content: flex-start;
-}
-
-
-.img2 {
-    aspect-ratio: 1;
-    object-fit: contain;
-    width: 65px;
 }
 
 .img3 {

@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import styles from "./SAMPLE_ABOUT.module.css";
 

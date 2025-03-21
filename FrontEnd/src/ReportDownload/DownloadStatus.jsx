@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./DownloadDesign.module.css";
 import Sidebar from "../CommonComponents/Sidebar";
+import TopBar from "../Regulations/TopBar";
 
 export function DownloadStatus() {
     const navigate = useNavigate(); //Initialize navigation function
@@ -33,6 +34,7 @@ export function DownloadStatus() {
         <Sidebar />
 
         <main className={styles.mainSection}>
+          <TopBar />
           <section className={styles.statusCard}>
             <div className={styles.statusContent}>
               <h1 className={styles.statusTitle}>DOWNLOAD COMPLETE!</h1>
