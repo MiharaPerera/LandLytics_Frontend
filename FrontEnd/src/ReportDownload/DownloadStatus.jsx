@@ -8,6 +8,10 @@ export function DownloadStatus() {
     const navigate = useNavigate(); //Initialize navigation function
     const [countdown, setCountdown] = useState(10); //Set countdown (change to 15 if needed)
 
+    const sectionStyle = {
+        background: `#d3d3d3 url("/assets/downloadBG.png") center / cover no-repeat`,
+    };
+
     useEffect(() => {
     const timer = setInterval(() => {
       setCountdown((prev) => prev - 1);
@@ -33,7 +37,7 @@ export function DownloadStatus() {
     <div className={styles.pageContainer}>
         <Sidebar />
 
-        <main className={styles.mainSection}>
+        <main className={styles.mainSection} style={sectionStyle}>
           <TopBar />
           <section className={styles.statusCard}>
             <div className={styles.statusContent}>
