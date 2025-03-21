@@ -38,8 +38,8 @@ const RegulationReport = () => {
       <TopBar />
 
         <section>
-          <h1>REPORT COMPLETE!</h1>
-          <p>23 applicable regulations identified</p>
+          <h1 className={styles.completeStatus}>REPORT COMPLETE!</h1>
+          <p className={styles.regCount}>23 applicable regulations identified</p>
 
           <section className={styles.regContainer}>
             <h2 className={styles.regType}>Zonal Regulations</h2>

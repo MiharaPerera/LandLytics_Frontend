@@ -8,7 +8,7 @@
 
 }
 
-h1 {
+.completeStatus {
   color: #322e29;
   padding-left: 100px;
   margin-top: 60px;
@@ -18,20 +18,22 @@ h1 {
 }
 
 @media (width<=640px) {
-  h1 {
+  .completeStatus {
     text-align: center;
     font-size: 24px;
   }
 }
-p {
+
+.regCount {
   color: #322e29;
   margin-top:30px;
   padding-left: 100px;
   font-family: Poppins, sans-serif;
   font-size: 22px;
 }
+
 @media (width<=640px) {
-  p {
+  .regCount {
     text-align: center;
     font-size: 24px;
   }
