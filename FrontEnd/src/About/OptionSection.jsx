@@ -37,6 +37,10 @@ const OptionsSection = () => {
           backgroundSrc="/api/placeholder/400/320"
           text="PROPERTY PLAN ANNOTATION"
         />
+        <OptionCard
+          backgroundSrc="/api/placeholder/400/320"
+          text="AI ChatBot"
+        />
       </div>
     </section>
   );
