@@ -11,6 +11,7 @@
     left: 350px;
     z-index: 1000;
     border-bottom: 1px solid #ddd;
+    overflow: hidden;
 }
 
 .title {

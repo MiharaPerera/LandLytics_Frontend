@@ -1,280 +1,96 @@
 .sampleAbout {
-  background-color: #e1dfdd;
-}
-
-/* Layout */
-.container {
+  padding-top: 116px;
+  padding-bottom: 50px;
   display: flex;
-  gap: 0;
+  background-color: #e1dfdd;
   min-height: 100vh;
 }
 
-@media (width <= 991px) {
-  .container {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0;
-  }
-}
-
-/* Sidebar Column */
-.sidebarColumn {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  width: 350px;
-  line-height: normal;
-}
-
-@media (width <= 991px) {
-  .sidebarColumn {
-    width: 100%;
-  }
-}
-
-/* Main Column */
-.mainColumn {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  width: 1100px;
-  line-height: normal;
-}
-
-@media (width <= 991px) {
-  .mainColumn {
-    width: 100%;
-  }
-}
-
 .mainContent {
+  width: calc(100% - 350px);
+  margin-left: 350px;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  width: 1171px;
-  font-family:
-    Poppins,
-    -apple-system,
-    Roboto,
-    Helvetica,
-    sans-serif;
-  font-weight: 400;
 }
 
-@media (width <= 991px) {
-  .mainContent {
-    max-width: 100%;
-  }
-}
-
-/* Header */
-.header {
-  color: #807567;
-  background-color: #faf9f8;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 8px 15px 280px;
-  font-size: 26px;
-}
-
-@media (width <= 991px) {
-  .header {
-    padding: 15px 20px;
-  }
-}
-
-.searchBar {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  background-color: #e1dfdd;
-  border-radius: 50px;
-  padding: 5px 30px 5px 15px;
-  width: 400px;
-}
-
-@media (width <= 991px) {
-  .searchBar {
-    max-width: 100%;
-    padding: 5px 15px;
-  }
-}
-
-.searchIcon {
-  aspect-ratio: 1;
-  object-fit: contain;
-  object-position: center;
-  flex-shrink: 0;
-  width: 24px;
-}
-
-.searchInput {
-  border: none;
-  background: transparent;
-  flex-grow: 1;
-  padding: 8px 0;
-  font-family: inherit;
-  font-size: inherit;
-  color: inherit;
-  outline: none;
-}
-
-.profileIcon {
-  aspect-ratio: 1;
-  object-fit: contain;
-  object-position: center;
-  flex-shrink: 0;
-  width: 45px;
-}
-
-/* Hero Section */
 .heroSection {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  width: 100%;
-  min-height: 500px;
   position: relative;
-}
-
-@media (width <= 991px) {
-  .heroSection {
-    min-height: 400px;
-  }
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
 }
 
 .heroBackground {
-  object-fit: cover;
-  object-position: center;
   width: 100%;
   height: 100%;
+  object-fit: cover;
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
 }
 
 .heroContent {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  padding-left: 650px;
   position: absolute;
   top: 50%;
-  right: 120px;
+  left: 10%;
   transform: translateY(-50%);
   color: white;
-  z-index: 1;
-  text-align: right;
-}
-
-@media (width <= 991px) {
-  .heroContent {
-    right: 20px;
-    padding: 0 20px;
-  }
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .heroTitle {
-  margin: 0;
-  font-family: Montaga, serif;
-  font-size: 50px;
-  font-weight: normal;
-  color: white;
-  padding: 13px 0px 0px 0px;
-  text-shadow: 5px 3px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Tiro Devanagari Hindi", serif;
+  font-size: 40px;
+  font-weight: 400;
+  margin:1px;
 }
 
 .heroSubtitle {
-  margin: 0;
-  font-family: Montaga, serif;
-  font-size: 45px;
-  font-weight: normal;
-  color: white;
-  text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+  font-family: "Tiro Devanagari Hindi", serif;
+  font-size: 36px;
+  font-weight: 400;
+  margin: 1px;
 }
 
-.heroProperty {
-  margin-top: 0;
-}
-
-.heroDreams {
-  margin-top: 7px;
-}
-
-.heroConfidence {
-  margin-top: 7px;
-}
-
-.heroDescription {
-  margin-top: 20px;
-  font-family: Poppins, sans-serif;
-  font-size: 14px;
-  color: white;
-  padding: 0px 0px 0px 0px;
-}
-
+.heroDescription,
 .heroSubDescription {
-  margin-top: 6px;
-  font-family: Poppins, sans-serif;
-  font-size: 14px;
-  color: white;
-  padding: 0px 0px 0px 0px;
+  font-size: 12px;
+  margin: 5px;
 }
 
-/* Options Section */
-.optionsSection {
-  background-color: #e1dfdd;
-  padding: 60px 40px;
-}
 
 .lookingForTitle {
-  color: #322e29;
   text-align: center;
-  font-family: Rosarivo, serif;
-  font-size: 48px;
-  font-weight: normal;
-  margin-top: 0;
-  margin-bottom: 60px;
-}
-
-@media (width <= 991px) {
-  .lookingForTitle {
-    font-size: 36px;
-    margin-bottom: 40px;
-  }
+  font-family: "Tiro Devanagari Hindi", serif;
+  font-size: 40px;
+  font-weight: 400;
+  margin-top: 40px;
 }
 
 .optionsContainer {
-  padding-bottom: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 70px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-@media (width <= 991px) {
-  .optionsContainer {
-    gap: 20px;
-  }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 24px;
+  column-gap: 24px;
+  padding-top:40px;
+  padding-left: 120px;
+  padding-right: 120px;
+  justify-items: center;
 }
 
 .optionCard {
-  border-radius: 20px;
-  overflow: hidden;
-  flex: 1 1 300px;
-  max-width: 450px;
-  height: 220px;
+  width: 100%;
+  max-width: 400px;
+  height: 250px;
   position: relative;
+  overflow: hidden;
+  border-radius: 40px;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-@media (width <= 991px) {
-  .optionCard {
-    flex: 1 1 100%;
-    height: 180px;
-  }
 }
 
 .optionContent {
@@ -284,49 +100,57 @@
 }
 
 .optionBackground {
-  object-fit: cover;
-  object-position: center;
   width: 100%;
   height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.optionCard:hover .optionBackground {
+  transform: scale(1.1);
 }
 
 .optionTextWrapper {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
   bottom: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
   text-align: center;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 0;
 }
 
 .optionText {
-  padding: 50px;
-  display: flex;
   color: white;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 600;
-  text-align: center;
-  margin: 0;
-  text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.9);
-}
-
-.optionDescription {
-  color: white;
-  font-size: 16px;
-  text-align: center;
-  margin: 5px 0 0 0;
 }
 
 .optionCardLink {
   text-decoration: none;
   color: inherit;
+}
+
+@media (max-width: 991px) {
+  .heroContent {
+    left: 5%;
+  }
+
+  .lookingForTitle {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .optionsContainer {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .heroTitle {
+    font-size: 32px;
+  }
+
+  .heroSubtitle {
+    font-size: 28px;
+  }
 }
