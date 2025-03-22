@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./LoginPage.module.css";
 import LeftSection from "./LeftSection";
 import LoginForm from "./LoginForm";
+import { supabase } from "../supabaseClient";
 
 function LoginPage() {
     return (
