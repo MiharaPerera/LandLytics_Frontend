@@ -16,7 +16,7 @@ function SAMPLE_REG_MAIN() {
             <header className={styles.upperbar}>
               <h1 className={styles.findregulations}>FIND REGULATIONS</h1>
               <img
-                src="https://cdn.builder.io/api/v1/image/assets/8df92ea44e644e7c8ba9a5fb0344ac83/c56b8fa2c1789b1f2d3a49b5352ee6de37326fce5408f486ecf0750c75584e12?placeholderIfAbsent=true"
+                src="./assets/profileIcon.png"
                 alt="Regulations icon"
                 className={styles.img2}
               />
