@@ -1,16 +1,26 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./LoginPage.module.css";
+import { supabase } from "../supabaseClient"; // Import Supabase client
 
 function LoginForm() {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
     if (email && password) {
-      navigate("/about"); // Redirect after login
+      const { error } = await supabase.auth.signInWithPassword({
+        email,
+        password,
+      });
+      
+      if (error) {
+        alert("Login failed: " + error.message);
+      } else {
+        navigate("/about"); // Redirect after login
+      }
     } else {
       alert("Please enter your credentials");
     }
@@ -67,5 +77,3 @@ function LoginForm() {
 }
 
 export default LoginForm;
-
-
