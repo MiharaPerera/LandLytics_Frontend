@@ -11,7 +11,7 @@ function AnnotationsPage() {
         </div>
         <div className={styles.column2}>
           <header className={styles.headerBar}>
-            <h1 className={styles.headerTitle}>ANNOTATE PROPERTY</h1>
+            <h1 className={styles.headerTitle}>ANNOTATE YOUR PROPERTY</h1>
             <div className={styles.userIcon}>
             <img src="/assets/profileIcon.png" alt="Profile" className={styles.profileIcon}/>
             </div>
