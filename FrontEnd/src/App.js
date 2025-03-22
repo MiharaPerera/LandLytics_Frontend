@@ -5,7 +5,7 @@ import SignupPage from "./Signup/SignupPage";
 import AboutPage from "./About/SAMPLE_ABOUT.jsx";
 import SAMPLE_REG_MAIN from "./Sample main/SAMPLE_REG_MAIN";
 import RegulationFilterPage from "./sample reg filter/RegulationFilterPage";
-import RegulationReport from "./Regulations/RegulationReport"
+import RegulationReport from "./Regulations/RegulationReport";
 import SampleRiskMapMain from "./MainRiskMap/SampleRiskMapMain";
 import DownloadStatus from "./ReportDownload/DownloadStatus";
 import DownloadDesign from "./ReportDownload/DownloadDesign";
@@ -47,6 +47,10 @@ function App() {
 
         {/* Plan Annotations Page */}
         <Route path="/plan-annotations" element={<ANNOTATIONS_PAGE />} />
+
+        {/* New Routes from Second Code Snippet */}
+        <Route path="/zonal/:zonalName" element={<div>Zonal Details Page (Under Development)</div>} />
+        <Route path="/search-results" element={<div>Search Results Page (Under Development)</div>} />
       </Routes>
     </Router>
   );
