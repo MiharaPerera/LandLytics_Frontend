@@ -85,11 +85,10 @@ function ZonalGrid() {
   return (
     <>
       {/* First row - large cards */}
-      <div className={styles.div4}>
-        <div className={styles.div}>
+      <div className={styles.div7}>
           {largeTwoColumnZonalData.map((zonal) => (
-            <div key={zonal.id} className={zonal.columnClassName}>
               <ZonalCard
+                  key={zonal.id}
                 name={zonal.name}
                 imageUrl={zonal.imageUrl}
                 className={zonal.className}
@@ -98,9 +97,7 @@ function ZonalGrid() {
                 zonalClassName={zonal.zonalClassName}
                 onClick={() => handleZonalCardClick(zonal.name)}
               />
-            </div>
           ))}
-        </div>
       </div>
 
       {/* Second row - small cards */}
@@ -114,7 +111,6 @@ function ZonalGrid() {
             containerClassName={zonal.containerClassName}
             nameClassName={zonal.nameClassName}
             zonalClassName={zonal.zonalClassName}
-            isSmall={true}
             onClick={() => handleZonalCardClick(zonal.name)}
           />
         ))}
@@ -131,7 +127,6 @@ function ZonalGrid() {
             containerClassName={zonal.containerClassName}
             nameClassName={zonal.nameClassName}
             zonalClassName={zonal.zonalClassName}
-            isSmall={true}
             onClick={() => handleZonalCardClick(zonal.name)}
           />
         ))}
