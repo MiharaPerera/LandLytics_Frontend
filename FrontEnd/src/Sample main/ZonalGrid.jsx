@@ -11,7 +11,7 @@ function ZonalGrid() {
       id: 1,
       name: "COLOMBO",
       imageUrl:
-        "https://cdn.builder.io/api/v1/image/assets/8df92ea44e644e7c8ba9a5fb0344ac83/46c4e237c9f4f59aeeca58abd5c22f3a474ed959e189a5ee0deeccc98faa9c00?placeholderIfAbsent=true",
+        "./assets/colombo.png",
       className: styles.colombozonal,
       containerClassName: styles.div5,
       nameClassName: styles.colombo,
@@ -22,7 +22,7 @@ function ZonalGrid() {
       id: 2,
       name: "KALUTARA",
       imageUrl:
-        "https://cdn.builder.io/api/v1/image/assets/8df92ea44e644e7c8ba9a5fb0344ac83/01324cf823639ebdf31825faa7cf5ae913b7eb5e5b34e25f09b6dc201f190b58?placeholderIfAbsent=true",
+        "./assets/kalutara.png",
       className: styles.kalutarazonal,
       containerClassName: styles.div6,
       nameClassName: styles.kalutara,
@@ -36,7 +36,7 @@ function ZonalGrid() {
       id: 3,
       name: "JAFFNA",
       imageUrl:
-        "https://cdn.builder.io/api/v1/image/assets/8df92ea44e644e7c8ba9a5fb0344ac83/8f29742b5fb5d48c7723f57d2346240837eba2cbeb1a9e7c52e141a0a4cce1c2?placeholderIfAbsent=true",
+        "./assets/jaffna.png",
       className: styles.jaffnazonal,
       containerClassName: styles.div8,
       nameClassName: styles.jaffna,
@@ -46,7 +46,7 @@ function ZonalGrid() {
       id: 4,
       name: "BADULLA",
       imageUrl:
-        "https://cdn.builder.io/api/v1/image/assets/8df92ea44e644e7c8ba9a5fb0344ac83/08f240c5fd0082ab405c2e6c1b50e067d954b22336fda08ba341b8feedf1f4d3?placeholderIfAbsent=true",
+        "./assets/badulla.png",
       className: styles.badullazonal,
       containerClassName: styles.div9,
       nameClassName: styles.badulla,
@@ -59,7 +59,7 @@ function ZonalGrid() {
       id: 5,
       name: "GALLE",
       imageUrl:
-        "https://cdn.builder.io/api/v1/image/assets/8df92ea44e644e7c8ba9a5fb0344ac83/8f29742b5fb5d48c7723f57d2346240837eba2cbeb1a9e7c52e141a0a4cce1c2?placeholderIfAbsent=true",
+        "./assets/galle.png",
       className: styles.gallezonal,
       containerClassName: styles.div10,
       nameClassName: styles.galle,
@@ -67,9 +67,9 @@ function ZonalGrid() {
     },
     {
       id: 6,
-      name: "CENTRAL PLANES",
+      name: "CENTRAL PLAINS",
       imageUrl:
-        "https://cdn.builder.io/api/v1/image/assets/8df92ea44e644e7c8ba9a5fb0344ac83/01324cf823639ebdf31825faa7cf5ae913b7eb5e5b34e25f09b6dc201f190b58?placeholderIfAbsent=true",
+        "./assets/centralhighlands.png",
       className: styles.centralzonal,
       containerClassName: styles.div11,
       nameClassName: styles.central,
