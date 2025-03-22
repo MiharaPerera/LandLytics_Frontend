@@ -2,7 +2,7 @@
   background-color: #e1dfdd;
 }
 .div {
-  gap: 0px;
+  gap: 40px 55px;
   display: flex;
 }
 @media (width<=991px) {
@@ -126,6 +126,7 @@
   margin-left:  0px;
   line-height: normal;
   display: flex;
+  padding-bottom: 70px;
 }
 
 .div3 {
@@ -307,6 +308,7 @@
   background-color: #b5b5b5;
   border-radius: 43px;
   width: 100%;
+  height: 450px;
   font-family:
     Poppins,
     -apple-system,
@@ -317,6 +319,7 @@
   font-weight: 500;
   overflow: hidden;
   cursor: pointer;
+  text-shadow: 0px 0px 10px #000000;
 }
 @media (width<=991px) {
   .colombozonal {
@@ -330,7 +333,7 @@
   align-items: start;
   width: 100%;
   min-height: 457px;
-  padding: 36px 48px 349px;
+  padding: 36px 0px 349px;
   display: flex;
   position: relative;
 }
@@ -347,7 +350,7 @@
   object-fit: cover;
   object-position: center;
   width: 100%;
-  height: 100%;
+  height: 60%;
   position: absolute;
   inset: 0;
 }
@@ -356,9 +359,11 @@
   margin: 0;
 }
 .zonal {
+  padding-left: 30px;
   margin-top: 16px;
   margin-bottom: -70px;
   position: relative;
+  text-shadow: 0px 0px 10px #000000;
 }
 @media (width<=991px) {
   .zonal {
@@ -384,6 +389,7 @@
   background-color: #b5b5b5;
   border-radius: 43px;
   width: 100%;
+  height: 450px;
   font-family:
     Poppins,
     -apple-system,
@@ -394,6 +400,7 @@
   font-weight: 500;
   overflow: hidden;
   cursor: pointer;
+  text-shadow: 0px 0px 10px #000000;
 }
 @media (width<=991px) {
   .kalutarazonal {
@@ -407,7 +414,7 @@
   align-items: start;
   width: 100%;
   min-height: 457px;
-  padding: 36px 48px 349px;
+  padding: 36px 0px 349px;
   display: flex;
   position: relative;
 }
@@ -464,6 +471,7 @@
   border-radius: 43px;
   flex: 1 0 0;
   max-width: 457px;
+  height: 450px;
   width: fit-content;
   overflow: hidden;
   cursor: pointer;
@@ -478,9 +486,9 @@
 .div8, .div9, .div10, .div11 {
   flex-direction: column;
   align-items: start;
-  width: 457px;
-  min-height: 97px;
-  padding: 36px 48px 16px;
+  width: 100%;
+  min-height: 400px;
+  padding: 36px 0px 349px;
   display: flex;
   position: relative;
 }
@@ -496,15 +504,19 @@
   object-fit: cover;
   object-position: center;
   width: 100%;
-  height: 100%;
+  height: 60%;
   position: absolute;
   inset: 0;
 }
 .jaffna, .galle, .badulla, .central {
   position: relative;
   margin: 0;
+  text-shadow: 0px 0px 10px #000000;
+
 }
 .zonal2, .zonal3, .zonal4, .zonal5 {
   margin-top: 16px;
   position: relative;
+  text-shadow: 0px 0px 10px #000000;
+  padding-left: 30px;
 }
