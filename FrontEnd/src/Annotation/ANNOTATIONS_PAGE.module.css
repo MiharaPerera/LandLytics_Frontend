@@ -49,7 +49,7 @@
 
 /* Header Bar Styling */
 .headerBar {
-  background-color: white;
+  background-color: #faf9f8;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -79,9 +79,8 @@
   width: 75px;
 }
 
-/* Main Content Styling */
 .mainContent {
-  padding: 24px;
+  padding: 50px;
   background-color: #e9e9e9;
   flex: 1;
 }
@@ -95,7 +94,6 @@
   margin-bottom: 32px;
 }
 
-/* Map Container */
 .mapContainer {
   width: 100%;
   height: 400px;
