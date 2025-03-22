@@ -23,14 +23,6 @@ function SAMPLE_REG_MAIN() {
             </header>
             <SearchSection />
             <ZonalGrid />
-
-{/*              */}{/* Button to navigate to the regulation filter page */}
-{/*             <button */}
-{/*               className={styles.tryFilterButton} // Add styling in CSS */}
-{/*               onClick={() => navigate("/regulation-filter")} */}
-{/*             > */}
-{/*               Try Regulation Filter */}
-{/*             </button> */}
           </div>
         </div>
       </div>

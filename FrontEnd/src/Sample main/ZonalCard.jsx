@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./SAMPLE_REG_MAIN.module.css";
 
 function ZonalCard({
   name,
@@ -8,14 +9,15 @@ function ZonalCard({
   nameClassName,
   zonalClassName,
   isSmall = false,
+  onClick
 }) {
   return (
-    <article className={className}>
+    <article className={className} onClick={onClick}>
       <div className={containerClassName}>
         <img
           src={imageUrl}
           alt={`${name} zone`}
-          className={isSmall ? "img6" : "img4"}
+          className={isSmall ? styles.img6 : styles.img4}
         />
         <h3 className={nameClassName}>
           {name}
