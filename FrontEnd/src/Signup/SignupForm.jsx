@@ -2,6 +2,7 @@
 import React, {useState} from "react";
 import styles from "./SignupPage.module.css";
 import {useNavigate} from "react-router-dom";
+import { supabase } from "../supabaseClient"; // Import Supabase client
 
 const SignupForm = () => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ const SignupForm = () => {
       return /\S+@\S+\.\S+/.test(email);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
       if (!username || !email || !password || !confirmPassword) {
           alert("Please fill in all fields.");
@@ -32,7 +33,17 @@ const SignupForm = () => {
           return;
       }
 
-      navigate("/about");
+      const { data, error } = await supabase.auth.signUp({
+        email,
+        password,
+      });
+      
+      if (error) {
+        alert("Signup failed: " + error.message);
+      } else {
+        alert("Signup successful! Check your email for verification.");
+        navigate("/about");
+      }
   };
 
   return (
