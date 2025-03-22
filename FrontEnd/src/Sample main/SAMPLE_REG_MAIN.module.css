@@ -15,16 +15,12 @@
 .column {
   flex-direction: column;
   align-items: stretch;
-  width: 350px;
+  width: 23%;
   margin-left: 0;
   line-height: normal;
   display: flex;
 }
-@media (width<=991px) {
-  .column {
-    width: 100%;
-  }
-}
+
 .sidebar {
   color: #fff;
   background-color: #907e6c;
@@ -126,20 +122,16 @@
 .column2 {
   flex-direction: column;
   align-items: stretch;
-  width: 75%;
+  width: 77%;
   margin-left:  0px;
   line-height: normal;
   display: flex;
 }
-@media (width<=991px) {
-  .column2 {
-    width: 100%;
-  }
-}
+
 .div3 {
   flex-direction: column;
   align-items: center;
-  width: 1400px;
+  width: 1172px;
   display: flex;
 }
 @media (width<=991px) {
@@ -154,15 +146,10 @@
   justify-content: space-between;
   align-self: stretch;
   align-items: stretch;
-  gap: 20px;
-  padding: 35px 37px 35px 80px;
-  font-family:
-    Rosarivo,
-    -apple-system,
-    Roboto,
-    Helvetica,
-    sans-serif;
-  font-size: 38px;
+  gap: 0px;
+  padding: 21px 20px 20px 370px;
+  font-family:"Montaga", serif;
+  font-size: 20px;
   font-weight: 400;
   display: flex;
   overflow: hidden;
@@ -178,7 +165,9 @@
 .findregulations {
   align-self: start;
   margin: 0;
+  padding-top: 12px;
   font-weight: 400;
+  font-size: 48px;
 }
 @media (width<=991px) {
   .findregulations {
@@ -189,9 +178,9 @@
 .img2 {
   aspect-ratio: 1;
   object-fit: contain;
-  object-position: center;
-  flex-shrink: 0;
   width: 75px;
+  justify-self: flex-end;
+  padding-right: 0px;
 }
 .searchForm {
   display: flex;
