@@ -1,20 +1,24 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./SAMPLE_ABOUT.module.css";
 
-const OptionCard = ({ backgroundSrc, text }) => {
+const OptionCard = ({ backgroundSrc, text, link }) => {
   return (
     <div className={styles.optionCard}>
-      <div className={styles.optionContent}>
-        <img
-          src={backgroundSrc}
-          alt={`${text} background`}
-          className={styles.optionBackground}
-        />
-        <div className={styles.optionTextWrapper}>
-          <p className={styles.optionText}>{text}</p>
-        </div>
-      </div>
+      <Link to={link} className={styles.optionCardLink}>
+          <div className={styles.optionContent}>
+            <img
+              src={backgroundSrc}
+              alt={`${text} background`}
+              className={styles.optionBackground}
+            />
+            <div className={styles.optionTextWrapper}>
+              <p className={styles.optionText}>{text}</p>
+            </div>
+          </div>
+      </Link>
     </div>
+
   );
 };
 
@@ -26,16 +30,24 @@ const OptionsSection = () => {
       </h2>
       <div className={styles.optionsContainer}>
         <OptionCard
-          backgroundSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/af1fe817ef52760e2cbc21c532d3a62c7168d7cf60d708dd3475fb6faf02666f?placeholderIfAbsent=true&apiKey=961e21a64e344f339dc230b663f13664"
-          text="FILTERED"
+          backgroundSrc="./assets/filteredRegulationReport.png"
+          text="FILTERED REGULATIONS REPORT"
+          link="/regulations"
         />
         <OptionCard
-          backgroundSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/f277339d4022d4ce349eaccadcf339da6e120d32769d83cf7d448f28c8ef19cf?placeholderIfAbsent=true&apiKey=961e21a64e344f339dc230b663f13664"
-          text="ENVIRONMENTAL"
+          backgroundSrc="./assets/environmentalRiskReport.png"
+          text="ENVIRONMENTAL RISK ANALYSIS"
+          link="/risk-maps"
         />
         <OptionCard
-          backgroundSrc="/api/placeholder/400/320"
+          backgroundSrc="./assets/propertyPlanAnnotaion.png"
           text="PROPERTY PLAN ANNOTATION"
+          link="/plan-annotations"
+        />
+        <OptionCard
+          backgroundSrc="./assets/chatbot.png"
+          text="AI CHATBOT"
+          link="/ai-chatbot"
         />
       </div>
     </section>
