@@ -82,7 +82,6 @@ function ZonalGrid() {
 
   return (
     <>
-      {/* First row - large cards */}
       <div className={styles.div7}>
           {largeTwoColumnZonalData.map((zonal) => (
               <ZonalCard
@@ -98,7 +97,6 @@ function ZonalGrid() {
           ))}
       </div>
 
-      {/* Second row - small cards */}
       <div className={styles.div7}>
         {smallTwoColumnZonalData.map((zonal) => (
           <ZonalCard
@@ -114,7 +112,6 @@ function ZonalGrid() {
         ))}
       </div>
 
-      {/* Third row - additional cards */}
       <div className={styles.div7}>
         {additionalZonalData.map((zonal) => (
           <ZonalCard
