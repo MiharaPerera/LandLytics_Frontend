@@ -49,7 +49,7 @@ const OptionsSection = () => {
         <OptionCard
           backgroundSrc="./assets/chatbot.png"
           text="AI CHATBOT"
-          link="/ai-chatbot"
+          link="/about"
         />
       </div>
     </section>

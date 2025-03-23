@@ -29,7 +29,7 @@ function Sidebar() {
               <Link to="/plan-annotations">PLAN ANNOTATIONS</Link>
             </li>
             <li className={location.pathname === "/ai-chatbot" ? styles.active : ""}>
-              <Link to="/ai-chatbot">AI CHATBOT</Link>
+              <span>AI CHATBOT</span>
             </li>
           </ul>
         </nav>
