@@ -10,7 +10,26 @@ const RegulationReport = () => {
 
   // Navigating to Download Page on button click
   const handleDownloadClick = () => {
-      navigate("/download-report");
+    // Preparing the content for the text file
+    let reportContent = "Regulation Report\n\n";
+
+    regulations.forEach((regulation, index) => {
+      reportContent += `Regulation ${index + 1}:\n`;
+      reportContent += `${regulation.text}\n`;
+      reportContent += `Citation: ${regulation.citation}\n\n`;
+    });
+
+    // Creating a Blob object  containing the report content
+    const blob = new Blob([reportContent], { type: 'text/plain' });
+    const url = URL.createObjectURL(blob); //Creating a temporary link for browser to download file content
+    const a = document.createElement('a');
+    a.href = url; // Pointing link to the file to be downloaded
+    a.download = 'regulation-report.txt';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a); // Remove the element from DOM once the download starts
+    URL.revokeObjectURL(url); // Clean up temporary file address/link after use
+    navigate("/download-report");
   };
 
   // Regulations array. Currently, has dummy text
