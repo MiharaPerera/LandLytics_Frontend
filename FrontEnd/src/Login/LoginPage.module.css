@@ -100,12 +100,6 @@
   box-sizing: border-box;
 }
 
-.icon {
-  color: #807567;
-  font-size: 18px;
-  margin-right: 10px;
-}
-
 .inputField {
   width: 100%;
   border: none;

@@ -3,7 +3,6 @@
   min-height: 100vh;
 }
 
-/* Layout Structure */
 .div {
   display: flex;
   width: 100%;
@@ -18,7 +17,6 @@
   }
 }
 
-/* Sidebar Styling */
 .column {
   flex-direction: column;
   align-items: stretch;

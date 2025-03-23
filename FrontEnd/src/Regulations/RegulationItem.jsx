@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./ReportDesign.module.css";
 
+// Receiving regulation text and citations from the array in Regulation Report Page
 const RegulationItem = ({ text, citation }) => {
   return (
     <article className={styles.article}>

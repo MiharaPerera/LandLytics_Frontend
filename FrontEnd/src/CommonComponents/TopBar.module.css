@@ -1,44 +1,22 @@
-/* TopBar.module.css */
-
-/* Basic styling for the top bar */
 .topBar {
-  background-color: #faf9f8; /* Light background color */
-  height: 145px; /* Height of the top bar */
-  display: flex;
-  justify-content: flex-end; /* Align content to the right */
-  align-items: center; /* Vertically center items */
-  padding: 35px 37px; /* Padding around the top bar content */
+    background-color: #faf9f8;
+    height: 116px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 20px;
+    position: fixed;
+    width: calc(100% - 350px);
+    top: 0;
+    left: 350px;
+    z-index: 1000;
+    border-bottom: 1px solid #ddd;
 }
 
-/* SVG or Logo styling */
-.topBar svg {
-  width: 1293px; /* Set width of the logo */
-  height: 145px; /* Set height of the logo */
-}
-
-/* Responsive design adjustments */
-
-/* For tablets and smaller screens */
-@media (max-width: 991px) {
-  .topBar {
-    padding: 25px 30px; /* Adjust padding */
-  }
-
-  .topBar svg {
-    width: 1000px; /* Adjust width of SVG/logo */
-    height: 120px; /* Adjust height of SVG/logo */
-  }
-}
-
-/* For mobile screens */
-@media (max-width: 640px) {
-  .topBar {
-    padding: 20px 20px; /* Adjust padding for small screens */
-    height: 120px; /* Reduce height for small screens */
-  }
-
-  .topBar svg {
-    width: 800px; /* Adjust width of the SVG/logo */
-    height: 100px; /* Adjust height of the SVG/logo */
-  }
+.img3 {
+    aspect-ratio: 1;
+    object-fit: contain;
+    width: 75px;
+    justify-self: flex-end;
+    padding-right: 40px;
 }

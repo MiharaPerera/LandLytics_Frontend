@@ -6,6 +6,7 @@ function TopBar() {
     const navigate = useNavigate();
     return (
         <header className={styles.topBar}>
+            {/*Navigating to previous page on button click*/}
             <button className={styles.backButton} onClick={() => navigate(-1)}>
                 <img src="/assets/backArrow.png"  alt="Back" className={styles.img2}/>
             </button>

@@ -9,6 +9,7 @@ import TopBar from "./TopBar";
 function RegulationFilterPage() {
   const navigate = useNavigate();
 
+  // Arrays for the items in each dropdown menu
   const subdivisionItems = ["General Requirements", "Survey Requirements", "Survey Plan Standards", "Plot Size Regulations"];
   const developmentItems = ["Street", "Road and Water Body Compliance"];
   const infrastructureItems = ["Road Access Rules"];
@@ -18,7 +19,7 @@ function RegulationFilterPage() {
   const planningItems = ["Site Plan Requirements"];
   const safetyItems = ["Fire Safety Compliance"];
 
-  const [filters, setFilters] = useState({
+  const [filters, setFilters] = useState({ // useState used to change from the default value
       subdivision: "",
       development: "",
       infrastructure: "",
@@ -29,15 +30,14 @@ function RegulationFilterPage() {
       safety: "",
     });
 
-    const handleFilterChange = (category, value) => {
+  const handleFilterChange = (category, value) => {
       setFilters((prevFilters) => ({
         ...prevFilters,
         [category]: value,
       }));
     };
-
-  const handleGenerateReport = () => {
-      navigate("/regulation-report", { state: { filters } }); // Make sure this route exists in your React Router
+  const handleGenerateReport = () => { // Redirecting user to another page on button click
+      navigate("/regulation-report", { state: { filters } });
     };
 
   return (
@@ -47,7 +47,6 @@ function RegulationFilterPage() {
               <TopBar/>
 
           </div>
-          {/* Back Button */}
           <main className={styles.mainContent}>
               <div className={styles.contentArea}>
                   <h1 className={styles.title}>FILTER REGULATIONS BY...</h1>
