@@ -1,33 +1,31 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import styles from "./SAMPLE_REG_MAIN.module.css";
 import ZonalCard from "./ZonalCard";
 
 function ZonalGrid() {
-  const navigate = useNavigate();
 
   const largeTwoColumnZonalData = [
     {
       id: 1,
       name: "COLOMBO",
-      imageUrl:
-        "./assets/colombo.png",
+      imageUrl: "./assets/colombo.png",
       className: styles.colombozonal,
       containerClassName: styles.div5,
       nameClassName: styles.colombo,
       zonalClassName: styles.zonal,
       columnClassName: styles.column3,
+      url: "https://www.uda.gov.lk/attachments/dev-plans-2021-2030/colombo_eng.pdf"
     },
     {
       id: 2,
       name: "KALUTARA",
-      imageUrl:
-        "./assets/kalutara.png",
+      imageUrl: "./assets/kalutara.png",
       className: styles.kalutarazonal,
       containerClassName: styles.div6,
       nameClassName: styles.kalutara,
       zonalClassName: styles.zonal,
       columnClassName: styles.column4,
+      url: "https://www.uda.gov.lk/attachments/dev-plans-2021-2030/Kalutara%20Development%20Plan%20-%20English.pdf"
     },
   ];
 
@@ -35,22 +33,22 @@ function ZonalGrid() {
     {
       id: 3,
       name: "JAFFNA",
-      imageUrl:
-        "./assets/jaffna.png",
+      imageUrl: "./assets/jaffna.png",
       className: styles.jaffnazonal,
       containerClassName: styles.div8,
       nameClassName: styles.jaffna,
       zonalClassName: styles.zonal2,
+      url: "https://www.uda.gov.lk/attachments/dev-plans-2023-2033/Killinochchienglish240619.pdf"
     },
     {
       id: 4,
       name: "BADULLA",
-      imageUrl:
-        "./assets/badulla.png",
+      imageUrl: "./assets/badulla.png",
       className: styles.badullazonal,
       containerClassName: styles.div9,
       nameClassName: styles.badulla,
       zonalClassName: styles.zonal3,
+      url: "https://www.uda.gov.lk/attachments/dev-plans-2021-2030/Badulla%20Development%20Plan%20-%20English.pdf"
     },
   ];
 
@@ -58,12 +56,12 @@ function ZonalGrid() {
     {
       id: 5,
       name: "GALLE",
-      imageUrl:
-        "./assets/galle.png",
+      imageUrl: "./assets/galle.png",
       className: styles.gallezonal,
       containerClassName: styles.div10,
       nameClassName: styles.galle,
       zonalClassName: styles.zonal4,
+      url: "https://www.uda.gov.lk/attachments/dev-plans-2023-2033/gallport.pdf"
     },
     {
       id: 6,
@@ -74,12 +72,12 @@ function ZonalGrid() {
       containerClassName: styles.div11,
       nameClassName: styles.central,
       zonalClassName: styles.zonal5,
+      url: "https://www.uda.gov.lk/attachments/dev-plans-2021-2030/Kandy%20Development%20Plan%20-%20English.pdf"
     },
   ];
 
-  const handleZonalCardClick = (zonalName) => {
-    // Navigate to a specific zonal page or show details
-    navigate(`/zonal/${zonalName.toLowerCase()}`);
+  const handleZonalCardClick = (url) => {
+    window.open(url, "_blank");
   };
 
   return (
@@ -95,7 +93,7 @@ function ZonalGrid() {
                 containerClassName={zonal.containerClassName}
                 nameClassName={zonal.nameClassName}
                 zonalClassName={zonal.zonalClassName}
-                onClick={() => handleZonalCardClick(zonal.name)}
+                onClick={() => handleZonalCardClick(zonal.url)}
               />
           ))}
       </div>
@@ -111,7 +109,7 @@ function ZonalGrid() {
             containerClassName={zonal.containerClassName}
             nameClassName={zonal.nameClassName}
             zonalClassName={zonal.zonalClassName}
-            onClick={() => handleZonalCardClick(zonal.name)}
+            onClick={() => handleZonalCardClick(zonal.url)}
           />
         ))}
       </div>
@@ -127,7 +125,7 @@ function ZonalGrid() {
             containerClassName={zonal.containerClassName}
             nameClassName={zonal.nameClassName}
             zonalClassName={zonal.zonalClassName}
-            onClick={() => handleZonalCardClick(zonal.name)}
+            onClick={() => handleZonalCardClick(zonal.url)}
           />
         ))}
       </div>
