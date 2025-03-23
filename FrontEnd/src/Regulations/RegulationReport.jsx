@@ -35,20 +35,36 @@ const RegulationReport = () => {
   // Regulations array. Currently, has dummy text
   const regulations = [
     {
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at congue mauris, vel lacinia magna. Pellentesque vel sem et eros porta rutrum. Vivamus mattis ullamcorper mi at convallis. Mauris tempor imperdiet.",
-      citation: "(Regulation 34.c. , Document D12-A, Colombo Zonal)",
+      text: "Where any land exceeds an extent of 0.5 hectare or more and is proposed to be subdivided into more than eight lots, compliance with planning regulations is mandatory.",
+      citation: "(Regulation 1 , Clause 7, General Regulations)",
     },
     {
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at congue mauris, vel lacinia magna. Pellentesque vel sem et eros porta rutrum. Vivamus mattis ullamcorper mi at convallis. Mauris tempor imperdiet.",
-      citation: "(Regulation 34.c. , Document D12-A, Colombo Zonal)",
+      text: "Subdivisions near roads, rivers, or water bodies must meet additional environmental and planning conditions imposed by the Authority.",
+      citation: "(Regulation 5 , Clause 17, General Regulations)",
     },
     {
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at congue mauris, vel lacinia magna. Pellentesque vel sem et eros porta rutrum. Vivamus mattis ullamcorper mi at convallis. Mauris tempor imperdiet.",
-      citation: "(Regulation 34.c. , Document D12-A, Colombo Zonal)",
+      text: "Non-residential sites require roads at least 9m wide, and residential lots must comply with minimum road access width regulations.",
+      citation: "(Regulation 6 , Clause 18, General Regulations)",
     },
     {
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at congue mauris, vel lacinia magna. Pellentesque vel sem et eros porta rutrum. Vivamus mattis ullamcorper mi at convallis. Mauris tempor imperdiet.",
-      citation: "(Regulation 34.c. , Document D12-A, Colombo Zonal)",
+      text: "Subdivisions over 1 hectare must allocate at least 10% of the land (excluding roads) for community/recreational spaces.",
+      citation: "(Regulation 8 , Clause 23, General Regulations)",
+    },
+    {
+      text: "For residential subdivisions with lots of at least 1012m² and only two housing units, the 10% community space rule may be waived.",
+      citation: "(Regulation 9 , Clause 25, General Regulations)",
+    },
+    {
+      text: "Development Permit is valid for one year, extendable for up to two additional years if work has started.\tDevelopment Permits valid up to three years",
+      citation: "(Regulation 10 , Clause 30, General Regulations)",
+    },
+    {
+      text: "Site plans must include boundaries, road access, drainage, and flood levels.",
+      citation: "(Regulation 11 , Clause 34, General Regulations)",
+    },
+    {
+      text: "Buildings over 15m or with 5+ residential units must comply with fire safety regulations.",
+      citation: "(Regulation 12 , Clause 41, General Regulations)",
     },
   ];
 
