@@ -21,7 +21,7 @@ function SearchSection() {
     <section>
       <form onSubmit={handleSubmit} className={styles.searchForm}>
         <div className={styles.searchbyzone}>
-          <img src="/assets/searchIcon.png" className={styles.img3}/>
+          <img src="/assets/searchIcon.png" alt="search icon" className={styles.img3}/>
           <input type="text" placeholder="Search by zone" className={styles.amInputDontrename} value={searchTerm}
             onChange={handleSearch}/>
         </div>
