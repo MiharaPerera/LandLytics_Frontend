@@ -4,6 +4,7 @@ import styles from "./SAMPLE_ABOUT.module.css";
 
 const OptionCard = ({ backgroundSrc, text, link }) => {
   return (
+      /*Format for each option card with links to their respective pages*/
     <div className={styles.optionCard}>
       <Link to={link} className={styles.optionCardLink}>
           <div className={styles.optionContent}>
@@ -22,6 +23,7 @@ const OptionCard = ({ backgroundSrc, text, link }) => {
   );
 };
 
+/*The section for all the option cards*/
 const OptionsSection = () => {
   return (
     <section>

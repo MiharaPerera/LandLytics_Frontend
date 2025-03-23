@@ -1,7 +1,7 @@
 import * as React from "react";
 import styles from "./DownloadDesign.module.css";
 import Sidebar from "../CommonComponents/Sidebar";
-import TopBar from "../Regulations/TopBar";
+import TopBar from "../CommonComponents/TopBar";
 import { DownloadStatus } from "./DownloadStatus";
 
 function DownloadDesign() {

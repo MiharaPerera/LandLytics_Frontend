@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import SearchBar from "./SearchBar";
 import MapSection from "./MapSection";
-// import MapSelection from "./MapSelection";
 import TopBar from "./TopBar";
 import styles from "./MainContent.module.css";
 
@@ -28,7 +27,6 @@ function MainContent() {
           {showMapSelection && (
             <>
               <MapSection fullSize />
-              {/*<MapSelection />*/}
             </>
           )}
         </section>

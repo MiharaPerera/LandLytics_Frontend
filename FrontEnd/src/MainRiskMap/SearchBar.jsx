@@ -6,6 +6,7 @@ function SearchBar() {
     <div className={styles.searchContainer}>
       <div className={styles.searchBar}>
         <img src="/assets/searchIcon.png" alt="Search icon" className={styles.searchIcon}/>
+          {/*Creating input field for searcbar*/}
         <input
           type="text"
           placeholder="Locate by address..."

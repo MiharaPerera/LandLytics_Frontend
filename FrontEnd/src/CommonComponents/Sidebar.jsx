@@ -6,7 +6,7 @@ function Sidebar() {
   const location = useLocation();
 
   return (
-      <aside className={styles.sidebarColumn}>
+      <aside className={styles.sidebarColumn}> {/*Creating a sidebar column on the left side*/}
         <nav className={styles.sidebar}>
           <div className={styles.logoContainer}>
             <img
@@ -15,7 +15,7 @@ function Sidebar() {
                 className={styles.logo}
             />
           </div>
-          <ul className={styles.navLinks}>
+          <ul className={styles.navLinks}> {/*Adding a list of links for the navigation sidebar*/}
             <li className={location.pathname === "/about" ? styles.active : ""}>
               <Link to="/about">ABOUT</Link>
             </li>

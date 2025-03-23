@@ -19,6 +19,7 @@ function AnnotationsPage() {
 
           <main className={styles.mainContent}>
             <div className={styles.mapContainer}>
+              {/*Creating a frame to host the annotations area*/}
               <iframe
                 src="https://sanali-site-plan-annotation.hf.space"
                 title="Site Plan Annotation Model"

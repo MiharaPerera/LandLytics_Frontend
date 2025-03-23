@@ -3,16 +3,17 @@ import { useNavigate } from "react-router-dom";
 import styles from "./ReportDesign.module.css";
 import Sidebar from "../CommonComponents/Sidebar";
 import RegulationItem from "./RegulationItem";
-import TopBar from "./TopBar";
+import TopBar from "../CommonComponents/TopBar";
 
 const RegulationReport = () => {
   const navigate = useNavigate();
 
+  // Navigating to Download Page on button click
   const handleDownloadClick = () => {
-      navigate("/download-report"); // Ensure the correct route is used
+      navigate("/download-report");
   };
 
-  //this will be an empty array in the final output. Will have to find a way to display the relevant regulations when integrating frontend with backend
+  // Regulations array. Currently, has dummy text
   const regulations = [
     {
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at congue mauris, vel lacinia magna. Pellentesque vel sem et eros porta rutrum. Vivamus mattis ullamcorper mi at convallis. Mauris tempor imperdiet.",
@@ -39,10 +40,10 @@ const RegulationReport = () => {
 
         <section>
           <h1 className={styles.completeStatus}>REPORT COMPLETE!</h1>
-          <p className={styles.regCount}>23 applicable regulations identified</p>
+          <p className={styles.regCount}>Applicable regulations identified:</p>
 
           <section className={styles.regContainer}>
-            <h2 className={styles.regType}>Zonal Regulations</h2>
+            <h2 className={styles.regType}>General Regulations</h2>
 
             {regulations.map((regulation, index) => (
               <RegulationItem key={index} text={regulation.text} citation={regulation.citation}/>
