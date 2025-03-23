@@ -43,6 +43,7 @@ const SignupForm = () => {
       if (error) {
         alert("Signup failed: " + error.message);
       } else {
+          console.log("User created:", data.user);
         alert("Signup successful! Check your email for verification.");
         navigate("/about");
       }
