@@ -1,0 +1,120 @@
+.sidebarColumn {
+<<<<<<< HEAD
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 350px; /* Adjusted for main layout */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #907e6c;
+  z-index: 1000;
+}
+
+.sidebar {
+  display: flex;
+=======
+  flex-direction: column;
+  width: 35px; /*350px*add it later*/
+  display: flex;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.sidebar {
+  color: #fff;
+  background-color: #907e6c;
+>>>>>>> main
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+<<<<<<< HEAD
+  padding-top: 20px;
+  color: #fff;
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.logo {
+  width: 100px;
+  max-width: 100%;
+  object-fit: contain;
+  aspect-ratio: 1 / 1; /* Square image fallback */
+}
+
+.navLinks {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0 0 0;
+}
+
+.navLinks li {
+  padding: 30px 50px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+=======
+  padding-top: 17px;
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  display: flex;
+}
+
+.logoContainer {
+  white-space: nowrap;
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+  padding: 1px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.logo {
+  aspect-ratio: 0;
+  object-fit: contain;
+  width: 100px;
+  max-width: 100%;
+}
+
+
+
+.navLinks {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.navLinks li {
+  padding: 40px 70px;
+  transition: background-color 0.3s ease;
+>>>>>>> main
+}
+
+.navLinks li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.navLinks li:hover {
+  background-color: #79695C;
+}
+
+.active {
+  background-color: #584D41;
+}

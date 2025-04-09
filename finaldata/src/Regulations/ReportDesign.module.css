@@ -1,0 +1,152 @@
+.pageContainer {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Georgia', serif;
+  position: relative; /* Added for proper sidebar positioning */
+}
+
+.sidebar {
+  width: 250px;
+  position: fixed;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  background: #ffffff;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  overflow-y: auto; /* Added for scrollable sidebar if needed */
+}
+
+.contentContainer {
+  flex: 1;
+  margin-left: 250px;
+  width: calc(100% - 250px);
+  background-color: #f0eeec;
+  padding: 2rem;
+  overflow-y: auto;
+  min-height: 100vh;
+}
+
+.reportContent {
+  max-width: 900px; /* Added to prevent over-stretching on wide screens */
+  margin: 0 auto; /* Centers the content */
+  padding: 2rem;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #3e3e3e;
+  text-align: center; /* Centered the title */
+}
+
+.subTitle {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+  text-align: center; /* Centered the subtitle */
+}
+
+.reportBox {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 10px;
+  max-height: 60vh;
+  overflow-y: auto;
+  margin-bottom: 2rem;
+}
+
+.categoryGroup {
+  margin-bottom: 2rem;
+}
+
+.categoryTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #2e2e2e;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.regulationItem {
+  margin-bottom: 1.2rem;
+  padding-left: 1rem;
+  border-left: 3px solid #5c4b3f;
+}
+
+.reference {
+  display: block; /* Changed to block for better spacing */
+  font-style: italic;
+  color: #555;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.downloadButton {
+  display: block; /* Changed to block for better control */
+  margin: 2rem auto 0; /* Centered the button */
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #5c4b3f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.downloadButton:hover {
+  background-color: #3e322b;
+}
+
+/* Improved responsive adjustments */
+@media (max-width: 992px) {
+  .reportContent {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+    transform: translateX(-200px); /* Hide by default */
+    transition: transform 0.3s ease;
+  }
+  
+  .sidebar.active {
+    transform: translateX(0); /* Show when active */
+  }
+  
+  .contentContainer {
+    margin-left: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+  }
+  
+  /* Add hamburger menu trigger styles if needed */
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  
+  .categoryTitle {
+    font-size: 1.3rem;
+  }
+  
+  .reportBox {
+    padding: 1rem;
+  }
+}
